@@ -2,6 +2,7 @@
 !.gitignore
 !.bashrc
 !.bash_profile
+!.Xdefaults
 !.vimrc
 !.gvimrc
 !.vim/*
