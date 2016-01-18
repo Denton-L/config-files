@@ -15,6 +15,9 @@ set splitright
 filetype plugin indent on
 syntax on
 
+" rebind the command W to w
+command W w
+
 "clear search highlighting on backslash
 nnoremap \ :noh<cr>:<backspace>
 
