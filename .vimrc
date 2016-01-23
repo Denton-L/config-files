@@ -1,6 +1,5 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-
 set number
 set relativenumber
 set tabstop=4
@@ -8,7 +7,6 @@ set shiftwidth=4
 set linebreak
 set autochdir
 set hlsearch
-set spell
 set spelllang=en
 set splitbelow
 set splitright
@@ -23,3 +21,6 @@ nnoremap \ :noh<cr>:<backspace>
 
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``
+
+"map F3 to toggle spellcheck
+nnoremap <F3> :set spell!<cr>
