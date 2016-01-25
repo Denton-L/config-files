@@ -1,20 +1,39 @@
+"pathogen support
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+
+"line numbering
 set number
 set relativenumber
+
+"tab defaults
 set tabstop=4
 set shiftwidth=4
+
+"wrap lines
 set linebreak
+
+"automatically change directory to file location
 set autochdir
-set hlsearch
+
+"change spellcheck to english
 set spelllang=en
+
+"enable sensible splits
 set splitbelow
 set splitright
+
+"indent by filetype
 filetype plugin indent on
+
+"enable syntax highlighting
 syntax on
 
 " rebind the command W to w
 command W w
+
+"highlight search results
+set hlsearch
 
 "clear search highlighting on backslash
 nnoremap \ :noh<cr>:<backspace>
