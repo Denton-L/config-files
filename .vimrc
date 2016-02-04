@@ -35,8 +35,8 @@ command W w
 "highlight search results
 set hlsearch
 
-"clear search highlighting on backslash
-nnoremap \ :noh<cr>:<backspace>
+"clear search highlighting on Leader-c (clear)
+nnoremap <Leader>c :noh<cr>:<backspace>
 
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``
