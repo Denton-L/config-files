@@ -43,3 +43,6 @@ nnoremap cu gg=G``
 
 "map F3 to toggle spellcheck
 nnoremap <F3> :set spell!<cr>
+
+"open the shell on Leader-s (shell)
+nnoremap <Leader>s :!$SHELL<cr>
