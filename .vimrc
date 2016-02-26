@@ -39,7 +39,7 @@ set hlsearch
 nnoremap <Leader>c :noh<cr>:<backspace>
 
 "auto-indent code on cu (clean up)
-nnoremap cu gg=G``
+nnoremap cu gg=G``zz
 
 "map F3 to toggle spellcheck
 nnoremap <F3> :set spell!<cr>
