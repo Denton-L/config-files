@@ -20,6 +20,9 @@ set spelllang=en
 set splitbelow
 set splitright
 
+"set default directory to present file location
+set autochdir
+
 "indent by filetype
 filetype plugin indent on
 
