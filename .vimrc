@@ -13,15 +13,15 @@ set shiftwidth=4
 "wrap lines
 set linebreak
 
+"automatically change directory to file location
+set autochdir
+
 "change spellcheck to english
 set spelllang=en
 
 "enable sensible splits
 set splitbelow
 set splitright
-
-"set default directory to present file location
-set autochdir
 
 "indent by filetype
 filetype plugin indent on
@@ -35,8 +35,8 @@ command W w
 "highlight search results
 set hlsearch
 
-"clear search highlighting on Leader-n (no highlighting)
-nnoremap <Leader>n :noh<cr>:<backspace>
+"clear search highlighting on Leader-c (clear)
+nnoremap <Leader>c :noh<cr>:<backspace>
 
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``zz
@@ -46,6 +46,3 @@ nnoremap <F3> :set spell! spell?<cr>
 
 "open the shell on Leader-s (shell)
 nnoremap <Leader>s :!$SHELL<cr>
-
-"cd to file location on Leader-c (change)
-nnoremap <Leader>c :lcd %:p:h<cr>:pwd<cr>
