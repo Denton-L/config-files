@@ -15,6 +15,8 @@ set linebreak
 
 "automatically change directory to file location
 set autochdir
+"this line is to fix a bug with autochdir in vim
+autocmd VimEnter * set autochdir
 
 "change spellcheck to english
 set spelllang=en
