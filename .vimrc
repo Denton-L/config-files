@@ -7,11 +7,25 @@ set number
 set relativenumber
 
 "tab defaults
+set autoindent
 set tabstop=4
 set shiftwidth=4
+set smarttab
 
 "wrap lines
 set linebreak
+
+"set display options
+set scrolloff=1
+set sidescrolloff=5
+set display+=lastline
+
+"statusline defaults
+set laststatus=2
+set ruler
+
+"enable completion for command-line
+set wildmenu
 
 "automatically change directory to file location
 set autochdir
@@ -34,8 +48,15 @@ syntax on
 " rebind the command W to w
 command W w
 
-"highlight search results
+"search defaults
+set incsearch
 set hlsearch
+
+"delete comment character when joining commented lines
+set formatoptions+=j
+
+"automatically re-read file if changed
+set autoread
 
 "clear search highlighting on Leader-c (clear)
 nnoremap <Leader>c :noh<cr>:<backspace>
