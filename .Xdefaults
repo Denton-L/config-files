@@ -24,3 +24,6 @@ xterm*color15: rgb:fc/fc/fc
 xterm*boldMode: false
 xterm*colorBDMode: true
 xterm*colorBD: rgb:fc/fc/fc
+xterm*VT100.Translations: #override \
+		Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+		Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
