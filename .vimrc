@@ -70,3 +70,7 @@ nnoremap <F3> :set spell! spell?<cr>
 "search selection with \s
 nnoremap <Leader>s *N
 vnoremap <Leader>s y/<C-r>"<cr>``
+
+"navigate wrapped lines with ease
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
