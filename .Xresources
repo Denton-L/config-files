@@ -27,3 +27,6 @@ xterm*colorBD: rgb:fc/fc/fc
 xterm*VT100.Translations: #override \
 		Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
 		Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+xcalc*foreground: rgb:00/fc/00
+xcalc*background: rgb:00/00/00
