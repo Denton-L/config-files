@@ -1,0 +1,5 @@
+[user]
+	email = liu.denton+github@gmail.com
+	name = Denton Liu
+[merge]
+	conflictStyle = diff3
