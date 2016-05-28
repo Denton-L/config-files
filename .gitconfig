@@ -3,3 +3,5 @@
 	name = Denton Liu
 [merge]
 	conflictStyle = diff3
+[push]
+	default = simple
