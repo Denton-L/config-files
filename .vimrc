@@ -51,6 +51,8 @@ command W w
 "search defaults
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 
 "delete comment character when joining commented lines
 set formatoptions+=j
