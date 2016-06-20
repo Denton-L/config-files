@@ -5,3 +5,5 @@
 	conflictStyle = diff3
 [push]
 	default = simple
+[alias]
+	repull = "!git fetch && git rebase --preserve-merges FETCH_HEAD"
