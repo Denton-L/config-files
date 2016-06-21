@@ -76,3 +76,6 @@ vnoremap <Leader>s y/<C-r>"<cr>``
 "navigate wrapped lines with ease
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
+
+"remove trailing spaces with Leader-t
+nnoremap <Leader>t :%s/\s\+$//<cr>
