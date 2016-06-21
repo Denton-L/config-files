@@ -69,7 +69,7 @@ nnoremap cu gg=G``zz
 "map F3 to toggle spellcheck
 nnoremap <F3> :set spell! spell?<cr>
 
-"search selection with \s
+"search selection with Leader-s
 nnoremap <Leader>s *N
 vnoremap <Leader>s y/<C-r>"<cr>``
 
