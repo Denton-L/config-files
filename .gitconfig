@@ -3,7 +3,14 @@
 	name = Denton Liu
 [merge]
 	conflictStyle = diff3
+	tool = vimdiff
 [push]
 	default = simple
 [alias]
 	repull = "!git fetch && git rebase --preserve-merges FETCH_HEAD"
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
