@@ -16,5 +16,3 @@
 	prompt = false
 [commit]
 	cleanup = scissors
-[pull]
-	rebase = preserve
