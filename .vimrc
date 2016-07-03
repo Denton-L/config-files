@@ -60,6 +60,9 @@ set formatoptions+=j
 "automatically re-read file if changed
 set autoread
 
+"use blowfish2 as default encryption method
+set cryptmethod=blowfish2
+
 "clear search highlighting on Leader-c (clear)
 nnoremap <Leader>c :noh<cr>:<backspace>
 
