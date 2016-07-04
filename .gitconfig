@@ -16,3 +16,5 @@
 	prompt = false
 [commit]
 	cleanup = scissors
+[core]
+	excludesfile = /home/dentonliu/.globalgitignore
