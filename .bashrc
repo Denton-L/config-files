@@ -1,6 +1,6 @@
 export VISUAL="vim"
 export EDITOR="$VISUAL"
-export PATH=$PATH:~/bin
+export PATH=~/bin:$PATH
 set -o vi
 alias :q=exit
 alias emacs=vim
