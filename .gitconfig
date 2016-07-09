@@ -18,3 +18,5 @@
 	cleanup = scissors
 [core]
 	excludesfile = /home/dentonliu/.globalgitignore
+[help]
+	autocorrect = 20
