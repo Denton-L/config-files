@@ -4,6 +4,7 @@
 [merge]
 	conflictStyle = diff3
 	tool = vimdiff
+	ff = no
 [push]
 	default = simple
 [alias]
