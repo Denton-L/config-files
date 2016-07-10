@@ -19,4 +19,4 @@
 [core]
 	excludesfile = /home/dentonliu/.globalgitignore
 [help]
-	autocorrect = 20
+	autocorrect = 10
