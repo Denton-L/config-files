@@ -8,6 +8,7 @@
 	default = simple
 [alias]
 	repull = "!git fetch && git rebase --preserve-merges FETCH_HEAD"
+	git = "!git"
 [diff]
 	tool = vimdiff
 [difftool]
