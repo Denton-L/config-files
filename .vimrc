@@ -82,3 +82,8 @@ nnoremap <expr> k v:count ? 'k' : 'gk'
 
 "remove trailing spaces with Leader-t
 nnoremap <Leader>t :%s/\s\+$//<cr>
+
+"break undoing sequence when doing deletes
+inoremap <C-u> <C-g>u<C-u>
+inoremap <C-w> <C-g>u<C-w>
+inoremap <BS> <C-g>u<BS>
