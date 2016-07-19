@@ -5,3 +5,4 @@ set -o vi
 alias :q=exit
 alias emacs=vim
 alias trimspaces="sed -i 's/\s\+$//'"
+eval $(thefuck --alias)
