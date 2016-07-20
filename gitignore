@@ -1,9 +1,0 @@
-*
-!.gitignore
-!.gitmodules
-!.bashrc
-!.bash_profile
-!.Xdefaults
-!.vimrc
-!.gvimrc
-!.vim/*
