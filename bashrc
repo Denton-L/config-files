@@ -1,6 +1,14 @@
-source /usr/share/git/completion/git-completion.bash
-source /usr/share/git/completion/git-prompt.sh
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+if [ -a /usr/share/git/completion/git-completion.bash ]
+then
+	source /usr/share/git/completion/git-completion.bash
+fi
+
+if [ -a /usr/share/git/completion/git-prompt.sh ]
+then
+	source /usr/share/git/completion/git-prompt.sh
+	PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+fi
+
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PATH=~/bin:$PATH
