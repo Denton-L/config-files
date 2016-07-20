@@ -89,11 +89,4 @@ inoremap <C-w> <C-g>u<C-w>
 inoremap <BS> <C-g>u<BS>
 
 "make Joins more sensible
-function! JoinImproved(count)
-    if a:count < 2
-        execute 'normal! J'
-    else
-        execute 'normal! ' . (a:count + 1) . 'J'
-    endif
-endfunction
-nnoremap J :call JoinImproved(v:count)<CR>:<BS>
+nnoremap <expr> J '<Esc>:normal! ' . (v:count < 2 ? '' : v:count + 1) . 'J<CR>:<BS>'
