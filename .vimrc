@@ -64,17 +64,17 @@ set autoread
 set cryptmethod=blowfish2
 
 "clear search highlighting on Leader-c (clear)
-nnoremap <Leader>c :noh<cr>:<backspace>
+nnoremap <Leader>c :noh<CR>:<BS>
 
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``zz
 
 "map F3 to toggle spellcheck
-nnoremap <F3> :set spell! spell?<cr>
+nnoremap <F3> :set spell! spell?<CR>
 
 "search selection with Leader-s
 nnoremap <Leader>s *N
-vnoremap <Leader>s y/<C-r>"<cr>``
+vnoremap <Leader>s y/<C-r>"<CR>``
 
 "navigate wrapped lines with ease
 nnoremap <expr> j v:count ? 'j' : 'gj'
@@ -83,7 +83,7 @@ nnoremap <expr> <Up> v:count ? 'j' : 'gj'
 nnoremap <expr> <Down> v:count ? 'k' : 'gk'
 
 "remove trailing spaces with Leader-t
-nnoremap <Leader>t :%s/\s\+$//<cr>
+nnoremap <Leader>t :%s/\s\+$//<CR>
 
 "break undoing sequence when doing deletes
 inoremap <C-u> <C-g>u<C-u>
