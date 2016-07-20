@@ -62,7 +62,7 @@ set autoread
 set cryptmethod=blowfish2
 
 "clear search highlighting on Leader-c (clear)
-nnoremap <Leader>c :noh<CR>:<BS>
+nnoremap <Leader>c :nohlsearch<CR>:<BS>
 
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``zz
