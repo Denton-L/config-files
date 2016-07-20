@@ -17,6 +17,6 @@
 [commit]
 	cleanup = scissors
 [core]
-	excludesfile = /home/dentonliu/.globalgitignore
+	excludesfile = ~/.config-file/globalgitignore
 [help]
 	autocorrect = 10
