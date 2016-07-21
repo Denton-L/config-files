@@ -5,7 +5,7 @@ do
 	[ -a $f ] && source $f
 done
 
-export PS1='[\u@\h \w$(__git_ps1 " (%s)")] $([ $? -eq 0 ] && echo "" || echo "($?) ")\$ '
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")] $([ $? -eq 0 ] && echo "" || echo "($?) ")\$ '
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PATH=~/bin:$PATH
