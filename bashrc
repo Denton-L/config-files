@@ -12,6 +12,7 @@ export PATH=~/bin:$PATH
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 alias :q=exit
+alias sl=ls
 alias emacs=vim
 alias trimspaces="sed -i 's/\s\+$//'"
 
