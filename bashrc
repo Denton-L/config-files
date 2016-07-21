@@ -10,6 +10,7 @@ PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PATH=~/bin:$PATH
+export GIT_PS1_SHOWDIRTYSTATE=1
 
 alias :q=exit
 alias emacs=vim
