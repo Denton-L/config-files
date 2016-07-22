@@ -61,6 +61,11 @@ set autoread
 "use blowfish2 as default encryption method
 set cryptmethod=blowfish2
 
+"change timeout settings
+set notimeout
+set ttimeout
+set ttimeoutlen=0
+
 "clear search highlighting on Leader-c (clear)
 nnoremap <Leader>c :nohlsearch<CR>:<BS>
 
