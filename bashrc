@@ -1,6 +1,6 @@
 set -o vi
 
-for f in ~/.config-files/git/contrib/completion/git-prompt.sh ~/.config-files/git/contrib/completion/git-completion.bash
+for f in ~/.config-files/bashrc_sources/*
 do
 	[ -a $f ] && source $f
 done
