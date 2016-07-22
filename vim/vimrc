@@ -27,8 +27,11 @@ set wildmenu
 
 "automatically change directory to file location
 set autochdir
-"this line is to fix a bug with autochdir in vim
-autocmd VimEnter * set autochdir
+"this group fixes a bug with autochdir
+augroup fix_autochdir
+	autocmd!
+	autocmd VimEnter * set autochdir
+augroup END
 
 "change spellcheck to english
 set spelllang=en
