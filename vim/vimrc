@@ -95,3 +95,9 @@ inoremap <BS> <C-g>u<BS>
 
 "make Joins more sensible
 nnoremap <expr> J v:count > 1 ? 'JJ' : 'J'
+
+"auto-source *vimrc on save
+augroup vimrc_source
+	autocmd!
+	autocmd BufWritePost *vimrc source %
+augroup END
