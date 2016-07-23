@@ -4,12 +4,6 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PATH=~/bin:$PATH
 export GIT_PS1_SHOWDIRTYSTATE=1
-
-alias :q=exit
-alias sl=ls
-alias emacs=vim
-alias trimspaces="sed -i 's/\s\+$//'"
-
-eval $(thefuck --alias)
+export THEFUCK_EVAL=$(thefuck --alias)
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx > /dev/null || printf "\nWelcome, %s!\n\n" $(whoami)
