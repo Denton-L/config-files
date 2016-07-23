@@ -163,7 +163,7 @@ bindsym $sup+t exec transmission-gtk
 bindsym $sup+x exec xcalc
 bindsym $sup+p exec arandr
 bindsym $sup+m exec amixer -q set Master 100% unmute
-bindsym $sup+e exec amixer -q set Master 20% unmute
+bindsym $sup+e exec amixer -q set Master 30% unmute
 # Floating window configurations
 for_window [title="Hangouts"] floating disabled
 for_window [title="Calculator"] floating enabled
