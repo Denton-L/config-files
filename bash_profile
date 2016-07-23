@@ -12,4 +12,4 @@ alias trimspaces="sed -i 's/\s\+$//'"
 
 eval $(thefuck --alias)
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx > /dev/null || printf "\nWelcome, Denton!\n\n"
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx > /dev/null || printf "\nWelcome, %s!\n\n" $(whoami)
