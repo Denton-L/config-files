@@ -8,7 +8,7 @@
 	default = simple
 [alias]
 	git = "!git"
-	noffmerge = "merge --no-ff"
+	no-ff-merge = "merge --no-ff"
 [diff]
 	tool = vimdiff
 [difftool]
