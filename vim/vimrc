@@ -104,3 +104,6 @@ augroup vimrc_source
 	autocmd!
 	autocmd BufWritePost *vimrc source %
 augroup END
+
+"make Y behave like D and C
+nnoremap Y y$
