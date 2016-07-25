@@ -107,3 +107,6 @@ augroup END
 
 "make Y behave like D and C
 nnoremap Y y$
+
+"smarter tabline
+let g:airline#extensions#tabline#enabled = 1
