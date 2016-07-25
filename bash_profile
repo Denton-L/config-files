@@ -4,6 +4,7 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PATH=~/bin:$PATH
 export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWUPSTREAM=auto
 export THEFUCK_EVAL=$(thefuck --alias)
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx > /dev/null || printf "\nWelcome, %s!\n\n" $(whoami)
