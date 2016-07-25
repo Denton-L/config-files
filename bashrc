@@ -12,4 +12,4 @@ alias trimspaces="sed -i 's/\s\+$//'"
 
 eval $THEFUCK_EVAL
 
-PS1='[\u@\h \W$(__git_ps1 " (git:%s)")$([[ $? -eq 0 ]] && echo "" || echo " ($?)")]\$ '
+PS1='[\u@\h \W$(__git_ps1 " (%s)")$([[ $? -eq 0 ]] && echo "" || echo " ($?)")]\$ '
