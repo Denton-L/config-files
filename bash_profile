@@ -1,8 +1,8 @@
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 
 export PATH=~/bin:$PATH
-export VISUAL="vim"
-export EDITOR="$VISUAL"
+export VISUAL=vim
+export EDITOR=$VISUAL
 export TERMINAL=uxterm
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUPSTREAM=auto
