@@ -18,6 +18,6 @@
 [commit]
 	cleanup = scissors
 [core]
-	excludesfile = ~/.config-file/globalgitignore
+	excludesfile = ~/.globalgitignore
 [help]
 	autocorrect = 10
