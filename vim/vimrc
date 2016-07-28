@@ -46,9 +46,6 @@ filetype plugin indent on
 "enable syntax highlighting
 syntax on
 
-" rebind the command W to w
-command! W w
-
 "search defaults
 set incsearch
 set hlsearch
