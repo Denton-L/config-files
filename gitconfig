@@ -5,7 +5,7 @@
 	conflictStyle = diff3
 	tool = vimdiff
 [push]
-	default = simple
+	default = matching
 [alias]
 	git = "!git"
 	no-ff-merge = "merge --no-ff"
