@@ -9,6 +9,7 @@
 [alias]
 	git = "!git"
 	no-ff-merge = "merge --no-ff"
+	graph = log --graph
 [diff]
 	tool = vimdiff
 [difftool]
