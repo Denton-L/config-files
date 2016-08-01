@@ -59,7 +59,9 @@ set formatoptions+=j
 set autoread
 
 "use blowfish2 as default encryption method
-set cryptmethod=blowfish2
+if v:version >= 401
+	set cryptmethod=blowfish2
+endif
 
 "change timeout settings
 set notimeout
