@@ -10,3 +10,5 @@ which thefuck &> /dev/null && export THEFUCK_EVAL=$(thefuck --alias)
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx > /dev/null || printf "\nWelcome, %s!\n\n" $(whoami)
+
+return 0
