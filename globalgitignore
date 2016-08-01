@@ -1,4 +1,8 @@
+# vim
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
 .netrwhist
 *~
+
+# (god forbid) emacs
+\#*\#
