@@ -1,9 +1,6 @@
 [user]
 	email = liu.denton+github@gmail.com
 	name = Denton Liu
-[merge]
-	conflictStyle = diff3
-	tool = vimdiff
 [push]
 	default = matching
 [alias]
@@ -16,6 +13,9 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[merge]
+	conflictStyle = diff3
+	tool = vimdiff
 [mergetool]
 	prompt = false
 [commit]
