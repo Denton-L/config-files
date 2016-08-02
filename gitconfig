@@ -7,8 +7,8 @@
 [push]
 	default = matching
 [alias]
-	git = "!git"
-	no-ff-merge = "merge --no-ff"
+	git = !git
+	no-ff-merge = merge --no-ff
 	graph = log --graph
 	supush = push --set-upstream
 [diff]
