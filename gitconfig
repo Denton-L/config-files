@@ -11,6 +11,7 @@
 	no-ff-merge = merge --no-ff
 	graph = log --graph
 	supush = push --set-upstream
+	prune-merged = !sh -c 'git branch -d $(git branch --merged HEAD | grep -v "^*")'
 [diff]
 	tool = vimdiff
 [difftool]
