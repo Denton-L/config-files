@@ -1,5 +1,5 @@
 set -o vi
-set -s autocd checkwinsize checkjobs extglob
+shopt -s autocd checkwinsize checkjobs extglob
 
 for f in ~/.config-files/bashrc_sources/*
 do
