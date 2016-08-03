@@ -1,7 +1,7 @@
 if has('gui_running')
 	set guioptions-=m
 	set guioptions-=T
-	set guifont=Courier\ 9
+	set guifont=Terminus\ 9
 	set encoding=utf-8
 
 	inoremap <C-BS> <C-w>

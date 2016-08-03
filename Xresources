@@ -20,8 +20,6 @@
 #define S_base0 #839496
 #define S_base1 #93a1a1
 #define S_base2 #eee8d5
-#define S_base3 #fdf6e3
-
 
 ! Light
 
@@ -35,6 +33,8 @@
 ! #define S_base3 #002b36
 
 !xterm configs
+xterm*faceName: Terminus
+xterm*faceSize: 9
 xterm*saveLines: 2000
 xterm*termName: xterm-color
 xterm*background: S_base03
