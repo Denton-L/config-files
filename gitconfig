@@ -24,3 +24,5 @@
 	excludesfile = ~/.globalgitignore
 [help]
 	autocorrect = 10
+[rerere]
+	enabled = true
