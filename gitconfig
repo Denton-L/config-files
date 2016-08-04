@@ -26,3 +26,5 @@
 	autocorrect = 10
 [rerere]
 	enabled = true
+[rebase]
+	autoSquash = true
