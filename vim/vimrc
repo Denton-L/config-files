@@ -118,3 +118,12 @@ let g:airline#extensions#tabline#enabled = 1
 "make : faster
 nnoremap <Enter> :
 vnoremap <Enter> :
+
+"use C-[hjkl] for window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+"remap missing C-l
+nnoremap <F5> <C-l>
