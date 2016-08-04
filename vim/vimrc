@@ -114,3 +114,7 @@ colorscheme solarized
 
 "smarter tabline
 let g:airline#extensions#tabline#enabled = 1
+
+"make : faster
+nnoremap <Enter> :
+vnoremap <Enter> :
