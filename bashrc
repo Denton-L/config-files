@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 set -o vi
 shopt -s autocd checkwinsize checkjobs extglob
 
