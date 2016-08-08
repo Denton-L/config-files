@@ -128,5 +128,6 @@ nnoremap <C-l> <C-w>l
 "remap missing C-l
 nnoremap <F5> <C-l>
 
-"make writes fast
-nnoremap <Space> :w<CR>
+"make buffer navigation faster
+nnoremap <Space> :bnext<CR>
+nnoremap <Tab> :bprevious<CR>
