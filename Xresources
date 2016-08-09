@@ -55,8 +55,6 @@ xterm*fadeColor: S_base03
 xterm*cursorColor: S_base1
 xterm*pointerColorBackground: S_base01
 xterm*pointerColorForeground: S_base1
-xterm*scrollBar: true
-xterm*rightScrollBar: true
 xterm*VT100.Translations: #override \
 		Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
 		Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
