@@ -153,17 +153,17 @@ bindsym Control+Print exec scrot -e 'mv $f ~/Screenshots/'
 bindsym XF86Display exec arandr
 
 # Program keybindings
- bindsym $sup+m exec amixer -q set Master 100% unmute                        
- bindsym $sup+e exec amixer -q set Master 30% unmute                         
- bindsym $sup+p exec arandr                                                  
- bindsym $sup+c exec chromium                                                
- bindsym $sup+h exec chromium --app-id=knipolnnllmklapflnccelgolnpehhpl      
- bindsym $sup+n exec chromium --incognito                                    
- bindsym $sup+v exec gvim                                                    
- bindsym $sup+l exec i3lock -c FF7700 -d -f -e && sleep 1 && xset dpms force off
- bindsym $sup+f exec spacefm                                                 
- bindsym $sup+t exec transmission-gtk                                        
- bindsym $sup+x exec xcalc                                                   
+bindsym $sup+m exec amixer -q set Master 100% unmute
+bindsym $sup+e exec amixer -q set Master 30% unmute
+bindsym $sup+p exec arandr
+bindsym $sup+c exec chromium
+bindsym $sup+h exec chromium --app-id=knipolnnllmklapflnccelgolnpehhpl
+bindsym $sup+n exec chromium --incognito
+bindsym $sup+v exec gvim
+bindsym $sup+l exec i3lock -c FF7700 -d -f -e && sleep 1 && xset dpms force off
+bindsym $sup+f exec spacefm
+bindsym $sup+t exec transmission-gtk
+bindsym $sup+x exec xcalc
 
 # Floating window configurations
 for_window [title="Hangouts"] floating disabled
