@@ -1,4 +1,5 @@
 if has('gui_running')
+	set guioptions-=e
 	set guioptions-=m
 	set guioptions-=T
 	set guifont=Fixed\ Medium\ Semi-Condensed\ 10
