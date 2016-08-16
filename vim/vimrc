@@ -1,5 +1,8 @@
 execute pathogen#infect()
 
+"more history
+set history=2000
+
 "line numbering
 set number
 set relativenumber
