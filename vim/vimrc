@@ -113,7 +113,6 @@ nnoremap Y y$
 
 "add theming
 set background=dark
-colorscheme solarized
 
 "smarter tabline
 let g:airline#extensions#tabline#enabled = 1
