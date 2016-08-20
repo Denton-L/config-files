@@ -15,8 +15,6 @@ alias la="ls -a"
 alias emacs=vim
 alias trimspaces="sed -i 's/\s\+$//'"
 
-[[ -n $THEFUCK_EVAL ]] && eval $THEFUCK_EVAL
-
 PS1='[\u@\h \W$(__git_ps1)$([[ $? -eq 0 ]] && echo "" || echo " ($?)")]\$ '
 
 return 0
