@@ -1,0 +1,5 @@
+#!/bin/sh
+
+remote=$1
+shift
+git push --delete $remote $@ && git branch -D $@
