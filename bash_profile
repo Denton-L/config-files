@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/.bin:$PATH
 export GOPATH=~/go
 export VISUAL=vim
 export EDITOR=$VISUAL
