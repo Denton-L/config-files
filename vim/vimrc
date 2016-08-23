@@ -124,4 +124,4 @@ nnoremap <F5> <C-l>
 
 "make buffer navigation faster
 nnoremap <Tab> :bnext<CR>
-nnoremap <Space> :bprevious<CR>
+nnoremap <S-Tab> :bprevious<CR>
