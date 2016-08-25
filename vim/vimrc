@@ -43,7 +43,6 @@ syntax on
 
 "search defaults
 set incsearch
-set hlsearch
 
 "delete comment character when joining commented lines
 set formatoptions+=j
@@ -62,8 +61,8 @@ set notimeout
 set ttimeout
 set ttimeoutlen=0
 
-"clear search highlighting on Leader-c (clear)
-nnoremap <Leader>c :nohlsearch<CR>:<BS>
+"toggle highlighting on <Leader>c
+nnoremap <Leader>c :set hlsearch! hlsearch?<CR>
 
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``zz
