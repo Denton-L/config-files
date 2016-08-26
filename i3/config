@@ -131,6 +131,25 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+mode "volume" {
+	bindsym grave exec amixer -q set Master 0% unmute
+	bindsym 1 exec amixer -q set Master 10% unmute
+	bindsym 2 exec amixer -q set Master 20% unmute
+	bindsym 3 exec amixer -q set Master 30% unmute
+	bindsym 4 exec amixer -q set Master 40% unmute
+	bindsym 5 exec amixer -q set Master 50% unmute
+	bindsym 6 exec amixer -q set Master 60% unmute
+	bindsym 7 exec amixer -q set Master 70% unmute
+	bindsym 8 exec amixer -q set Master 80% unmute
+	bindsym 9 exec amixer -q set Master 90% unmute
+	bindsym 0 exec amixer -q set Master 100% unmute
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+m mode "volume"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -153,8 +172,6 @@ bindsym Control+Print exec scrot -e 'mv $f ~/Screenshots/'
 bindsym XF86Display exec arandr
 
 # Program keybindings
-bindsym $sup+m exec amixer -q set Master 100% unmute
-bindsym $sup+e exec amixer -q set Master 30% unmute
 bindsym $sup+p exec arandr
 bindsym $sup+c exec chromium
 bindsym $sup+h exec chromium --app-id=knipolnnllmklapflnccelgolnpehhpl
