@@ -124,9 +124,10 @@ mode "resize" {
 	bindsym Up resize shrink height 10 px or 10 ppt
 	bindsym Right resize grow width 10 px or 10 ppt
 
-	# back to normal: Enter or Escape
+	# back to normal: Enter or Escape or <C-[>
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
+	bindsym Control+bracketleft mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -146,6 +147,7 @@ mode "volume" {
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
+	bindsym Control+bracketleft mode "default"
 }
 
 bindsym $mod+m mode "volume"
