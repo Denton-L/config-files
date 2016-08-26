@@ -123,3 +123,11 @@ nnoremap <F5> <C-l>
 "make buffer navigation faster
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
+
+"make go and gO start at the beginning of the line
+nnoremap go o<Esc>0C
+nnoremap gO O<Esc>0C
+
+"make S start from the beginning of the line
+nnoremap S S<Esc>0C
+vnoremap S S<Esc>0C
