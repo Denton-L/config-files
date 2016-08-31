@@ -2,7 +2,7 @@
 	email = liu.denton+github@gmail.com
 	name = Denton Liu
 [push]
-	default = matching
+	default = simple
 [alias]
 	git = !git
 	no-ff-merge = merge --no-ff
