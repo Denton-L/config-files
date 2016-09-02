@@ -3,6 +3,8 @@ xterm*termName: xterm-color
 xterm*background: black
 xterm*foreground: green
 xterm*bellIsUrgent: true
+xterm*scrollkey: true
+xterm*scrollttyoutput: false
 xterm*VT100.Translations: #override \
 		Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
 		Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
