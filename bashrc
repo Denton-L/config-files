@@ -15,6 +15,6 @@ alias la="ls -a"
 alias emacs=vim
 alias trimspaces="sed -i 's/\s\+$//'"
 
-PS1='[\u@\h \W$(__git_ps1)$([[ $? -eq 0 ]] && echo "" || echo " ($?)")]\$ '
+PS1='[\u@\h \W$(__git_ps1 2>/dev/null)$([[ $? -eq 0 ]] && echo "" || echo " ($?)")]\$ '
 
 return 0
