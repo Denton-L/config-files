@@ -12,6 +12,7 @@ alias :q=exit
 alias sl=ls
 alias ll="ls -l"
 alias la="ls -a"
+alias lla="ls -la"
 alias emacs=vim
 alias trimspaces="sed -i 's/\s\+$//'"
 
