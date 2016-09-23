@@ -29,6 +29,9 @@ set wildmenu
 "change spellcheck to english
 set spelllang=en
 
+"use only one space between sentences
+set nojoinspaces
+
 "enable sensible splits
 set splitbelow
 set splitright
