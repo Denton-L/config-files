@@ -166,9 +166,11 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Print Screen keybindings
-bindsym --release Print exec scrot -s -e 'mv $f ~/Screenshots/'
-bindsym Shift+Print exec scrot -u -b -e 'mv $f ~/Screenshots/'
-bindsym Control+Print exec scrot -e 'mv $f ~/Screenshots/'
+set $scrot-clip scrot -e 'xclip -sel clip -t image/png $f; rm $f'
+
+bindsym --release Print exec "$scrot-clip -s"
+bindsym Shift+Print exec "$scrot-clip -u -b"
+bindsym Control+Print exec "$scrot-clip -e"
 
 # Launch arandr on Fn+Screen
 bindsym XF86Display exec arandr
