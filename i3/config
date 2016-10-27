@@ -127,7 +127,6 @@ mode "resize" {
 	bindsym Escape mode "default"
 	bindsym Control+bracketleft mode "default"
 }
-
 bindsym $mod+r mode "resize"
 
 mode "volume" {
@@ -147,8 +146,14 @@ mode "volume" {
 	bindsym Escape mode "default"
 	bindsym Control+bracketleft mode "default"
 }
-
 bindsym $mod+m mode "volume"
+
+mode "escape" {
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym Control+bracketleft mode "default"
+}
+bindsym $mod+backslash mode "escape"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
