@@ -51,6 +51,9 @@ set formatoptions+=j
 "automatically re-read file if changed
 set autoread
 
+"disable the mouse
+set mouse=
+
 "use blowfish2 as default encryption method
 try
 	set cryptmethod=blowfish2
