@@ -132,3 +132,6 @@ nnoremap gO O<Esc>0C
 "make S start from the beginning of the line
 nnoremap S S<Esc>0C
 vnoremap S S<Esc>0C
+
+"make <Leader>o open (unjoin) lines
+nnoremap <Leader>j i<CR><Esc>
