@@ -135,3 +135,6 @@ vnoremap S S<Esc>0C
 
 "make <Leader>o open (unjoin) lines
 nnoremap <Leader>o i<CR><Esc>
+
+"save to temporary file
+command! MkTemp execute 'write! ' . system('mktemp')
