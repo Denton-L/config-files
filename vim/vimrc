@@ -134,4 +134,4 @@ nnoremap S S<Esc>0C
 vnoremap S S<Esc>0C
 
 "make <Leader>o open (unjoin) lines
-nnoremap <Leader>j i<CR><Esc>
+nnoremap <Leader>o i<CR><Esc>
