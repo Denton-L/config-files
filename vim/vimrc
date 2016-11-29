@@ -54,6 +54,9 @@ set autoread
 "disable the mouse
 set mouse=
 
+"set the listchars
+set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:+
+
 "use blowfish2 as default encryption method
 try
 	set cryptmethod=blowfish2
