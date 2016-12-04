@@ -1,3 +1,6 @@
+"define $VIMHOME
+let $VIMHOME=expand("<sfile>:p:h")
+
 "more history
 set history=2000
 
@@ -56,6 +59,9 @@ set mouse=
 
 "set the listchars
 set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:+
+
+"define thesaurus
+set thesaurus+=$VIMHOME/thesauruses/mthesaur.txt
 
 "use blowfish2 as default encryption method
 try
