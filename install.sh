@@ -13,8 +13,8 @@ vim
 
 for f in $dotfiles
 do
-	ln -sfT $f ~/.$f 
+	ln -sfT $PWD/$f ~/.$f 
 done
-ln -sfT i3 ~/.config/i3
+ln -sfT $PWD/i3 ~/.config/i3
 
 ./update.sh
