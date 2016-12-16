@@ -169,7 +169,7 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Print Screen keybindings
-set $scrot-clip scrot -e 'xclip -sel clip -t image/png $f; rm $f'
+set $scrot-clip scrot -e 'xclip -sel clip -t image/png $f; mv $f ~/Screenshots/'
 
 bindsym --release Print exec "$scrot-clip -s"
 bindsym Shift+Print exec "$scrot-clip -u -b"
