@@ -11,6 +11,6 @@ export GIT_PS1_SHOWUPSTREAM=auto
 
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx > /dev/null || printf "\nWelcome, %s!\n\n" $(whoami)
+[[ "$(tty)" == "/dev/tty1" ]] && exec startx || printf "\nWelcome, %s!\n\n" $(whoami)
 
 return 0
