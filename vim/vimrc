@@ -63,6 +63,9 @@ set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:+
 "define thesaurus
 set thesaurus+=$VIMHOME/thesauruses/mthesaur.txt
 
+"allow switching from modified buffers
+set hidden
+
 "use blowfish2 as default encryption method
 try
 	set cryptmethod=blowfish2
