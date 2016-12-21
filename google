@@ -7,4 +7,4 @@ import urllib.parse
 url = 'https://www.google.com/search?q='
 sys.argv.pop(0)
 query = urllib.parse.quote_plus(' '.join(sys.argv))
-subprocess.run(['xdg-open', url+query], stdout=subprocess.DEVNULL)
+subprocess.Popen(['xdg-open', url+query], stdout=subprocess.DEVNULL)
