@@ -1,3 +1,3 @@
 #!/bin/sh
 
-xdg-open http://clients3.google.com/generate_204
+nohup xdg-open http://clients3.google.com/generate_204 &> /dev/null &
