@@ -11,10 +11,17 @@ globalgitignore
 vim
 '
 
+if [[ "$OSTYPE" == "darwin"* ]]
+then
+	lnflags='sf'
+else
+	lnflags='sfT'
+fi
+
 for f in $dotfiles
 do
-	ln -sfT $PWD/$f ~/.$f 
+	ln -$lnflags $PWD/$f ~/.$f
 done
-ln -sfT $PWD/i3 ~/.config/i3
+ln -$lnflags $PWD/i3 ~/.config/i3
 
 ./update.sh
