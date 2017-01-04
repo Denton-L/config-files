@@ -123,6 +123,12 @@ let g:airline#extensions#tabline#show_close_button = 0
 "make : faster
 nnoremap <Enter> :
 vnoremap <Enter> :
+"unmap in cmdwin
+augroup cmdwin_enter
+	autocmd!
+	autocmd CmdwinEnter * nunmap <Enter>
+	autocmd CmdwinLeave * nnoremap <Enter> :
+augroup END
 
 "use C-[hjkl] for window navigation
 nnoremap <C-h> <C-w>h
