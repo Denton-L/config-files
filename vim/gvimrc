@@ -4,7 +4,7 @@ if has('gui_running')
 	set guioptions-=T
 	set guifont=Fixed\ Medium\ Semi-Condensed\ 10
 	set encoding=utf-8
-	
+
 	colorscheme solarized
 
 	inoremap <C-BS> <C-w>
