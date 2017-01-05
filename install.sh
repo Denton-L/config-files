@@ -13,15 +13,15 @@ vim
 
 if [[ "$OSTYPE" == "darwin"* ]]
 then
-	lnflags='sf'
+	lncmd='ln -sf'
 else
-	lnflags='sfT'
+	lncmd='ln -sfT'
 fi
 
 for f in $dotfiles
 do
-	ln -$lnflags $PWD/$f ~/.$f
+	$lncmd $PWD/$f ~/.$f
 done
-ln -$lnflags $PWD/i3 ~/.config/i3
+$lncmd $PWD/i3 ~/.config/i3
 
 ./update.sh
