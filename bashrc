@@ -13,15 +13,11 @@ cdup() {
 }
 
 _cdup() {
-	local cur opts
-
 	COMPREPLY=()
-	cur="${COMP_WORDS[COMP_CWORD]}"
-	opts="$(pwd | sed "s/\(.*\/$1\/\).*/\1/; s/\// /g")"
 
 	if [[ "$COMP_CWORD" == "1" ]]
 	then
-		COMPREPLY=( $(compgen -W "$opts" -- $cur) )
+		COMPREPLY=( $(compgen -W "$(pwd | sed "s/\// /g")" -- $2) )
 		return 0
 	fi
 }
