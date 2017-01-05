@@ -8,6 +8,10 @@ do
 	[[ -a $f ]] && source $f
 done
 
+function cdup {
+	cd $(pwd | sed "s/\(.*\/$1\/\).*/\1/")
+}
+
 alias :q=exit
 alias sl=ls
 alias ll="ls -l"
