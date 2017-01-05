@@ -8,9 +8,24 @@ do
 	[[ -a $f ]] && source $f
 done
 
-function cdup {
+cdup() {
 	cd $(pwd | sed "s/\(.*\/$1\/\).*/\1/")
 }
+
+_cdup() {
+	local cur opts
+
+	COMPREPLY=()
+	cur="${COMP_WORDS[COMP_CWORD]}"
+	opts="$(pwd | sed "s/\(.*\/$1\/\).*/\1/; s/\// /g")"
+
+	if [[ "$COMP_CWORD" == "1" ]]
+	then
+		COMPREPLY=( $(compgen -W "$opts" -- $cur) )
+		return 0
+	fi
+}
+complete -F _cdup cdup
 
 alias :q=exit
 alias sl=ls
