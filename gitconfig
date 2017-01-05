@@ -5,7 +5,7 @@
 	default = simple
 [alias]
 	git = !git
-	no-ff-merge = merge --no-ff
+	no-ff = merge --no-ff
 	graph = log --graph
 	please = push --force-with-lease
 	prune-merged = !git-prune-merged
