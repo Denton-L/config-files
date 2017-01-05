@@ -7,6 +7,7 @@
 	git = !git
 	no-ff-merge = merge --no-ff
 	graph = log --graph
+	please = push --force-with-lease
 	prune-merged = !git-prune-merged
 	delete = !git-delete
 	squash = !git-squash
