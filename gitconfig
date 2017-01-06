@@ -10,6 +10,7 @@
 	please = push --force-with-lease
 	prune-merged = !git-prune-merged
 	delete = !git-delete
+	push-upstream = !git-push-upstream
 	squash = !git-squash
 [diff]
 	tool = vimdiff
