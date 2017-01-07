@@ -6,6 +6,7 @@ Xresources
 Xresources.d
 bash_profile
 bashrc
+ctags
 gitconfig
 globalgitignore
 vim

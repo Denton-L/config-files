@@ -66,6 +66,9 @@ set thesaurus+=$VIMHOME/thesauruses/mthesaur.txt
 "allow switching from modified buffers
 set hidden
 
+"look for tags in parent folders
+set tags=tags;/
+
 "use blowfish2 as default encryption method
 try
 	set cryptmethod=blowfish2

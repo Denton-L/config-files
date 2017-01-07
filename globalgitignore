@@ -6,3 +6,6 @@
 
 # (god forbid) emacs
 \#*\#
+
+# ctags
+tags
