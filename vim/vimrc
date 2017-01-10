@@ -156,5 +156,8 @@ vnoremap S S<Esc>0C
 "make <Leader>o open (unjoin) lines
 nnoremap <Leader>o i<CR><Esc>
 
+"ensure visual mode $ doesn't delete newline
+vnoremap $ $h
+
 "save to temporary file
 command! MkTemp execute 'write! ' . system('mktemp')
