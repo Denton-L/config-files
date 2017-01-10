@@ -1,5 +1,5 @@
 [user]
-	email = liu.denton@gmail.com
+	email = denton@cask.co
 	name = Denton Liu
 [push]
 	default = simple
@@ -10,7 +10,7 @@
 	please = push --force-with-lease
 	prune-merged = !git-prune-merged
 	delete = !git-delete
-	push-upstream = !git-push-upstream
+	push-up = !git-push-up
 	squash = !git-squash
 [diff]
 	tool = vimdiff
