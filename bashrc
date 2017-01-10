@@ -32,6 +32,6 @@ alias emacs=vim
 alias trimspaces="sed -i 's/\s\+$//'"
 alias edtemp="$VISUAL $(mktemp)"
 
-PS1='[\u@\h \W$(__git_ps1 2>/dev/null)$([[ $? -eq 0 ]] && echo "" || echo " ($?)")]\$ '
+PS1='[\u@\h \W$(__git_ps1 2>/dev/null)$(e=$?; [[ $e -eq 0 ]] && echo "" || echo " ($e)")]\$ '
 
 return 0
