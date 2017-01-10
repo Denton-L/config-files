@@ -26,6 +26,6 @@ _git_push_upstream() {
 
 	return 0
 }
-complete -F _git_push_upstream "git push-upstream"
+complete -F _git_push_upstream "git push-up"
 
 complete -c run
