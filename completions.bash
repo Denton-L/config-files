@@ -18,7 +18,7 @@ _git_delete() {
 }
 complete -F _git_delete "git delete"
 
-_git_push_upstream() {
+_git_push_up() {
 	if [[ "$COMP_CWORD" == "2" ]]
 	then
 		__gitcomp_nl "$(__git_remotes)"
@@ -26,6 +26,6 @@ _git_push_upstream() {
 
 	return 0
 }
-complete -F _git_push_upstream "git push-up"
+complete -F _git_push_up "git push-up"
 
 complete -c run
