@@ -32,4 +32,4 @@
 [rebase]
 	autoSquash = true
 [init]
-	templatedir = /home/dentonliu/.git-template
+	templatedir = ~/.git-template
