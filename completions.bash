@@ -3,6 +3,8 @@ _git_squash() {
 	then
 		__git_complete_revlist
 	fi
+	
+	return 0
 }
 complete -F _git_squash "git squash"
 
