@@ -13,17 +13,13 @@ globalgitignore
 vim
 '
 
-if [[ "$OSTYPE" == "darwin"* ]]
-then
-	lncmd='ln -sf'
-else
-	lncmd='ln -sfT'
-fi
-
 for f in $dotfiles
 do
-	$lncmd $PWD/$f ~/.$f
+	[ -d ~/.$f ] && rm -rf ~/.$f
+	ln -sf $PWD/$f ~/.$f
 done
-$lncmd $PWD/i3 ~/.config/i3
+
+[ -d ~/.config/i3 ] && rm -rf ~/.config/i3
+ln -s $PWD/i3 ~/.config/i3
 
 ./update.sh
