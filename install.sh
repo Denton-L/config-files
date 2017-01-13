@@ -8,6 +8,7 @@ bash_profile
 bashrc
 ctags
 gitconfig
+git-template
 globalgitignore
 vim
 '
