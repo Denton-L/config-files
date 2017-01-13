@@ -3,10 +3,10 @@ shopt -s autocd checkwinsize checkjobs extglob
 
 for f in ~/.config-files/bashrc_sources/*
 do
-	[[ -a $f ]] && source $f
+	[[ -f $f ]] && source $f
 done
 
-[[ -a ~/.bin/completions.bash ]] && source ~/.bin/completions.bash
+[[ -f ~/.bin/completions.bash ]] && source ~/.bin/completions.bash
 
 cdup() {
 	cd $(pwd | sed "s/\(.*\/$1\/\).*/\1/")
