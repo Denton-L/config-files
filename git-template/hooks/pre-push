@@ -2,6 +2,7 @@
 
 remote="$1"
 url="$2"
+NEWLINE=$'\n'
 
 z40=0000000000000000000000000000000000000000
 
@@ -17,11 +18,15 @@ do
 		fi
 
 		# check for invalid commit messages
-		commit=`git rev-list --max-count=1 --grep '^fixup! ' --grep 'squash! ' --grep '^# Conflicts:' "$range"`
-		if [ -n "$commit" ]
+		commits=`git rev-list --grep '^fixup! ' --grep 'squash! ' --grep '^# Conflicts:' "$range"`
+		if [ -n "$commits" ]
 		then
-			echo "Found commit with invalid commit message:"
-			git show --no-patch $commit
+			echo "Found commits with invalid commit messages:$NEWLINE"
+			for c in $commits
+			do
+				git show --no-patch $c
+				echo $NEWLINE
+			done
 			exit 1
 		fi
 	fi
