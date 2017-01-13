@@ -30,6 +30,6 @@
 [rerere]
 	enabled = true
 [rebase]
-	autoSquash = true
+	autosquash = true
 [init]
 	templatedir = ~/.git-template
