@@ -16,11 +16,15 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+	trustExitCode = true
+	guitool = gvimdiff
 [merge]
 	conflictStyle = diff3
 	tool = vimdiff
 [mergetool]
 	prompt = false
+	trustExitCode = true
+	guitool = gvimdiff
 [commit]
 	cleanup = scissors
 [core]
