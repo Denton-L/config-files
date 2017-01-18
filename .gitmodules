@@ -34,3 +34,7 @@
 	path = vim/pack/plugins/start/vim-bufonly
 	url = https://github.com/schickling/vim-bufonly.git
 	ignore = dirty
+[submodule "vim/pack/plugins/start/vim-fugitive"]
+	path = vim/pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+	branch = master
