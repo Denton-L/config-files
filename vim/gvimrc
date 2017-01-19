@@ -1,6 +1,6 @@
 if has('gui_running')
 	if has('mac')
-		set guifont=Sauce\ Code\ Powerline:h10,\ Monaco:h10
+		set guifont=Sauce\ Code\ Powerline:h12,\ Monaco:h10
 	elseif has('unix')
 		let fonts=['Source Code Pro for Powerline 10', 'Misc Fixed Medium Semi-Condensed 10', 'Ubuntu Mono 10']
 		for font in fonts
