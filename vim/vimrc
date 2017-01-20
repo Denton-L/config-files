@@ -122,6 +122,12 @@ set background=dark
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_close_button = 0
 
+"default to straight separators
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
 "make : faster
 nnoremap <Enter> :
 vnoremap <Enter> :
