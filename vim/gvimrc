@@ -7,6 +7,7 @@ if has('gui_running')
 			let font_name = substitute(font, ' \d*$', '', '')
 			if system('fc-match "' . font_name . '"') =~ font_name
 				let &guifont = font
+				break
 			endif
 		endfor
 	elseif has('win32')
