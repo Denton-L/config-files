@@ -148,8 +148,8 @@ nnoremap <C-l> <C-w>l
 nnoremap <F5> <C-l>
 
 "make buffer navigation faster
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
+nnoremap <Leader><Tab> :bnext<CR>
+nnoremap <Leader><S-Tab> :bprevious<CR>
 
 "make go and gO start at the beginning of the line
 nnoremap go o<Esc>0C
