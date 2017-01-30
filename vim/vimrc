@@ -148,8 +148,10 @@ nnoremap <C-l> <C-w>l
 nnoremap <F5> <C-l>
 
 "make buffer navigation faster
-nnoremap <Leader><Tab> :bnext<CR>
-nnoremap <Leader><S-Tab> :bprevious<CR>
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+"remap <C-i> which is overwritten by <Tab> in CLI
+nnoremap <Leader>i <C-i>
 
 "make go and gO start at the beginning of the line
 nnoremap go o<Esc>0C
