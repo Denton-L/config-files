@@ -19,6 +19,7 @@ if has('gui_running')
 
 	colorscheme solarized
 
+	nnoremap <C-z> :shell<CR>
 	inoremap <C-BS> <C-w>
 
 	function! CheckPowerlineFont()
