@@ -33,9 +33,6 @@ alias lla='ls -la'
 alias emacs=vim
 alias edtemp='$VISUAL $(mktemp)'
 
-PS1='[\u@\h \W'
-type -t __git_ps1 &> /dev/null && PS1+='$(__git_ps1 2>/dev/null)'
-PS1+='$(e=$?; [[ $e -eq 0 ]] && echo "" || echo " ($e)")'
-PS1+=']\$ '
+PS1='[\u@\h \W$(__git_ps1 2>/dev/null)$(e=$?; [[ $e -eq 0 ]] && echo "" || echo " ($e)")]\$ '
 
 return 0
