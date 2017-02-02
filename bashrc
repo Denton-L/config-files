@@ -1,12 +1,13 @@
+CONFIG_ROOT=${SSHHOME:-~}
 set -o vi
 shopt -s autocd checkwinsize checkjobs extglob
 
-for f in ~/.config-files/bashrc_sources/*
+for f in $CONFIG_ROOT/.config-files/bashrc_sources/*
 do
 	[[ -f $f ]] && source $f
 done
 
-[[ -f ~/.bin/completions.bash ]] && source ~/.bin/completions.bash
+[[ -f $CONFIG_ROOT/.bin/completions.bash ]] && source $CONFIG_ROOT/.bin/completions.bash
 
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
@@ -22,7 +23,7 @@ _cdup() {
 	fi
 }
 complete -F _cdup cdup
-complete -F _ssh sshrc
+type -t _ssh &> /dev/null && complete -F _ssh sshrc
 
 alias :q=exit
 alias sl=ls
@@ -32,6 +33,9 @@ alias lla='ls -la'
 alias emacs=vim
 alias edtemp='$VISUAL $(mktemp)'
 
-PS1='[\u@\h \W$(__git_ps1 2>/dev/null)$(e=$?; [[ $e -eq 0 ]] && echo "" || echo " ($e)")]\$ '
+PS1='[\u@\h \W'
+type -t __git_ps1 &> /dev/null && PS1+='$(__git_ps1 2>/dev/null)'
+PS1+='$(e=$?; [[ $e -eq 0 ]] && echo "" || echo " ($e)")'
+PS1+=']\$ '
 
 return 0
