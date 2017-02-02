@@ -1,7 +1,8 @@
 . $SSHHOME/.sshrc.d/bash_profile
 . $SSHHOME/.sshrc.d/bashrc
 
-for f in $SSHHOME/.sshrc.d/bashrc_sources/*
+$SSHHOME/.sshrc.d/update.sh &> /dev/null
+for f in $SSHHOME/bashrc_sources/*
 do
 	. $f
 done
