@@ -8,11 +8,6 @@ done
 
 [[ -f ~/.bin/completions.bash ]] && source ~/.bin/completions.bash
 
-sshv() {
-	ssh -t $@ '$SHELL -lo vi'
-}
-complete -F _ssh sshv
-
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
 }
@@ -27,6 +22,7 @@ _cdup() {
 	fi
 }
 complete -F _cdup cdup
+complete -F _ssh sshrc
 
 alias :q=exit
 alias sl=ls
