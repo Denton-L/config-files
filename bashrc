@@ -9,7 +9,7 @@ done
 [[ -f ~/.bin/completions.bash ]] && source ~/.bin/completions.bash
 
 cdup() {
-	cd $(pwd | sed "s/\(.*\/$1\/\).*/\1/")
+	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
 }
 
 _cdup() {
