@@ -17,7 +17,7 @@ do
 		fi
 
 		# check for invalid commit messages
-		commits=`git rev-list --grep '^fixup! ' --grep 'squash! '  "$range"`
+		commits=`git rev-list --grep '^fixup! ' --grep '^squash! '  "$range"`
 		if [ -n "$commits" ]
 		then
 			printf 'Found commits with invalid commit messages:\n'
