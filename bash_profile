@@ -7,7 +7,6 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=auto
 
-
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 
 STARTX_FILE=~/.config-files/startx_file
