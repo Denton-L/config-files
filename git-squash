@@ -1,3 +1,4 @@
 #!/bin/sh
 
-git reset --soft "$@" && git commit
+git reset --soft  `git merge-base HEAD "$@"`
+git commit
