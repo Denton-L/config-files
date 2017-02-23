@@ -24,6 +24,8 @@ _git_push_up() {
 	if [[ "$COMP_CWORD" == "2" ]]
 	then
 		__gitcomp_nl "$(__git_remotes)"
+	else
+		_git_push
 	fi
 
 	return 0
