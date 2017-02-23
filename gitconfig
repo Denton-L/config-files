@@ -27,8 +27,6 @@
 	prompt = false
 	trustExitCode = true
 	guitool = gvimdiff
-[commit]
-	cleanup = scissors
 [core]
 	excludesfile = ~/.globalgitignore
 [help]
