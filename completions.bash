@@ -2,6 +2,8 @@ _git_squash() {
 	if [[ "$COMP_CWORD" == "2" ]]
 	then
 		__git_complete_revlist
+	else
+		_git_commit
 	fi
 
 	return 0
