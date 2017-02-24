@@ -173,6 +173,12 @@ nnoremap <Leader>O a<CR><Esc>
 nnoremap dm "_d
 nnoremap dmm "_dd
 
+"make dc and yc go to clipboard
+nnoremap dc "+d
+nnoremap dcc "+dd
+nnoremap yc "+y
+nnoremap ycc "+yy
+
 "ensure visual mode $ doesn't delete newline
 vnoremap $ $h
 
