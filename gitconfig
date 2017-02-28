@@ -10,6 +10,7 @@
 	please = push --force-with-lease
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
+	amend = commit --amend --no-edit
 	prune-merged = !git-prune-merged
 	delete = !git-delete
 	push-up = !git-push-up
