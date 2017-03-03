@@ -18,17 +18,17 @@
 	squash = !git-squash
 [diff]
 	tool = vimdiff
+	guitool = gvimdiff
 [difftool]
 	prompt = false
 	trustExitCode = true
-	guitool = gvimdiff
 [merge]
 	conflictStyle = diff3
 	tool = vimdiff
+	guitool = gvimdiff
 [mergetool]
 	prompt = false
 	trustExitCode = true
-	guitool = gvimdiff
 [core]
 	excludesfile = ~/.globalgitignore
 [help]
