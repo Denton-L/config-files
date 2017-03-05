@@ -1,4 +1,4 @@
-export PATH=~/bin:~/.bin:$PATH
+export PATH=~/bin:~/.bin:~/.node_modules/bin:$PATH
 export GOPATH=~/go
 export VISUAL=vim
 export EDITOR=$VISUAL

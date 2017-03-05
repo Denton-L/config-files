@@ -10,6 +10,7 @@ ctags
 gitconfig
 git-template
 globalgitignore
+npmrc
 sshrc
 sshrc.d
 vim
