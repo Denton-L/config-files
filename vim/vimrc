@@ -170,15 +170,21 @@ vnoremap S S<Esc>0C
 nnoremap <Leader>o i<CR><Esc>
 nnoremap <Leader>O a<CR><Esc>
 
-"make dm (eliMinate) delete into blackhole register
+"make dm and cm (eliMinate) delete into blackhole register
 nnoremap dm "_d
 nnoremap dmm "_dd
+nnoremap dM "_D
+nnoremap cm "_c
+nnoremap cmm "_cc
+nnoremap cM "_C
 
 "make dc and yc go to clipboard
 nnoremap dc "+d
 nnoremap dcc "+dd
+nnoremap dC "+D
 nnoremap yc "+y
 nnoremap ycc "+yy
+nnoremap yC "+Y
 
 "ensure visual mode $ doesn't delete newline
 vnoremap $ $h
