@@ -34,4 +34,11 @@ _git_push_up() {
 }
 complete -F _git_push_up "git push-up"
 
+_git_git() {
+	__git_compute_all_commands
+	__gitcomp "$__git_all_commands $(__git_aliases)"
+}
+complete -F _git_git "git git"
+
+
 complete -c run
