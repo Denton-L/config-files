@@ -24,7 +24,6 @@ _cdup() {
 complete -F _cdup cdup
 type -t _ssh &> /dev/null && complete -F _ssh sshrc
 
-alias :q=exit
 alias sl=ls
 alias ll='ls -l'
 alias la='ls -a'
