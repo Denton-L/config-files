@@ -1,6 +1,3 @@
 #!/bin/sh
 
-ref="$1"
-shift
-git reset --soft  `git merge-base HEAD "$ref"`
-git commit $@
+git reset --soft `git merge-base HEAD "$1"`
