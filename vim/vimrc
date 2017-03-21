@@ -196,8 +196,8 @@ command! MkTemp execute 'saveas! ' . system('mktemp')
 command! HexDump %!xxd
 
 function! UnHexDump()
-	silent! %substitute/^[0-9a-f]*//
-	silent! %substitute/ .*\$//
+	silent! %substitute/^[0-9a-f]*: //
+	silent! %substitute/  .*$//
 	%!xxd -r -p
 endfunction
 command! UnHexDump call UnHexDump()
