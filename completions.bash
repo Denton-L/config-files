@@ -5,7 +5,7 @@ _git_squash() {
 	fi
 
 	return 0
-}
+} &&
 complete -F _git_squash "git squash"
 
 _git_delete() {
@@ -17,7 +17,7 @@ _git_delete() {
 	fi
 
 	return 0
-}
+} &&
 complete -F _git_delete "git delete"
 
 _git_push_up() {
@@ -29,14 +29,13 @@ _git_push_up() {
 	fi
 
 	return 0
-}
+} &&
 complete -F _git_push_up "git push-up"
 
 _git_git() {
 	__git_compute_all_commands
 	__gitcomp "$__git_all_commands $(__git_aliases)"
-}
+} &&
 complete -F _git_git "git git"
-
 
 complete -c run
