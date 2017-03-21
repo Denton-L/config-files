@@ -38,4 +38,8 @@ _git_git() {
 } &&
 complete -F _git_git "git git"
 
-complete -c run
+_run() {
+	_command_offset 1
+	return 0
+} &&
+complete -F _run run
