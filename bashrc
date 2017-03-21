@@ -11,8 +11,7 @@ done
 
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
-}
-
+} &&
 _cdup() {
 	COMPREPLY=()
 
@@ -21,7 +20,7 @@ _cdup() {
 		COMPREPLY=( $(compgen -W "$(pwd | sed "s/\// /g")" -- $2) )
 		return 0
 	fi
-}
+} &&
 complete -F _cdup cdup
 type -t _ssh &> /dev/null && complete -F _ssh sshrc
 
