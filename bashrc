@@ -1,5 +1,4 @@
 CONFIG_ROOT=${SSHHOME:-~}
-set -o vi
 shopt -s autocd checkwinsize checkjobs extglob
 
 for f in $CONFIG_ROOT/.config-files/bashrc_sources/*

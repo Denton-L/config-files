@@ -1,3 +1,4 @@
+bind -f $SSHHOME/.sshrc.d/inputrc
 . $SSHHOME/.sshrc.d/bash_profile
 . $SSHHOME/.sshrc.d/bashrc
 
