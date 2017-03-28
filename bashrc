@@ -16,7 +16,8 @@ _cdup() {
 
 	if [[ "$COMP_CWORD" == "1" ]]
 	then
-		COMPREPLY=( $(compgen -W "$(pwd | sed "s/\// /g")" -- $2) )
+		local IFS=$'\n'
+		COMPREPLY=( $(compgen -W "$(echo $PWD | tr / \\n)" -- $2) )
 		return 0
 	fi
 } &&
