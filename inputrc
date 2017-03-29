@@ -1,1 +1,4 @@
+set editing-mode emacs
+"\e": vi-movement-mode
+
 set editing-mode vi
