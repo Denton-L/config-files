@@ -112,6 +112,9 @@ nnoremap <Leader>t :%s/\s\+$//<CR>:nohlsearch<CR>
 inoremap <C-u> <C-g>u<C-u>
 inoremap <C-w> <C-g>u<C-w>
 
+"allow <C-z> in insert mode
+inoremap <C-z> <C-o><C-z>
+
 "auto-source *vimrc on save
 augroup vimrc_source
 	autocmd!
