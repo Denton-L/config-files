@@ -10,6 +10,6 @@ export GIT_PS1_SHOWUPSTREAM=auto
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 
 STARTX_FILE=~/.config-files/startx_file
-[[ -e $STARTX_FILE ]] && [[ "$(tty)" == "$(<$STARTX_FILE)" ]] && exec startx || printf "\nWelcome, %s!\n\n" $(whoami)
+[[ -e $STARTX_FILE ]] && [[ "$(tty)" == "$(<$STARTX_FILE)" ]] && exec startx || printf "\nWelcome, %s!\n\n" $USER
 
 return 0
