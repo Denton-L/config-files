@@ -5,7 +5,7 @@ set keymap vi-move
 "qs": start-kbd-macro
 "qe": end-kbd-macro
 "@@": call-last-kbd-macro
-"ZZ": "dd\C-d"
+"ZZ": accept-line
 "ZQ": "dd\C-d"
 
 set keymap vi-insert
