@@ -1,5 +1,10 @@
-set editing-mode emacs
+set keymap emacs
 "\e": vi-movement-mode
 
-set editing-mode vi
+set keymap vi-move
+"qs": start-kbd-macro
+"qe": end-kbd-macro
+"@@": call-last-kbd-macro
+
+set keymap vi-insert
 "\C-l": clear-screen
