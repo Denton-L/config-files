@@ -5,6 +5,8 @@ set keymap vi-move
 "qs": start-kbd-macro
 "qe": end-kbd-macro
 "@@": call-last-kbd-macro
+"ZZ": "dd\C-d"
+"ZQ": "dd\C-d"
 
 set keymap vi-insert
 "\C-l": clear-screen
