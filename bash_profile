@@ -8,8 +8,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=auto
 
 [[ -f ~/.bashrc ]] && source ~/.bashrc
+[[ -e ~/.startx ]] && source ~/.startx
 
-STARTX_FILE=~/.config-files/startx_file
-[[ -e $STARTX_FILE ]] && [[ "$(tty)" == "$(<$STARTX_FILE)" ]] && exec startx || printf "\nWelcome, %s!\n\n" $USER
-
+printf "\nWelcome, %s!\n\n" $USER
 return 0
