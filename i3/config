@@ -180,6 +180,13 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
+# Media keybindings
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioStop exec playerctl stop
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 # Print Screen keybindings
 set $scrot-clip scrot -e 'xclip -sel clip -t image/png $f; mv $f ~/Screenshots/'
 
