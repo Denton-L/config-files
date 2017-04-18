@@ -21,11 +21,7 @@ do
 		if [ -n "$commits" ]
 		then
 			printf 'Found commits with invalid commit messages:\n'
-			for c in $commits
-			do
-				git show --no-patch $c
-				printf '\n'
-			done
+			git show --no-patch "$commits"
 			exit 1
 		fi
 	fi
