@@ -38,3 +38,7 @@
 	path = vim/pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
+[submodule "vim/pack/plugins/start/vim-localvimrc"]
+	path = vim/pack/plugins/start/vim-localvimrc
+	url = https://github.com/Denton-L/vim-localvimrc.git
+	branch = master

@@ -4,6 +4,9 @@
 .netrwhist
 *~
 
+# vim-localvimrc
+.lvimrc
+
 # (god forbid) emacs
 \#*\#
 
