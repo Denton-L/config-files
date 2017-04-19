@@ -16,6 +16,7 @@
 	delete = !git-delete
 	push-up = !git-push-up
 	squash = !git-squash
+	squash-rebase = !git-squash-rebase
 [diff]
 	tool = vimdiff
 	guitool = gvimdiff
