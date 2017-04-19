@@ -32,6 +32,16 @@ _git_push_up() {
 } &&
 complete -F _git_push_up "git push-up"
 
+_git_squash_rebase() {
+	if [[ "$COMP_CWORD" == "2" ]]
+	then
+		__git_complete_revlist
+	fi
+
+	return 0
+} &&
+complete -F _git_squash_rebase "git squash-rebase"
+
 _git_git() {
 	__git_compute_all_commands
 	__gitcomp "$__git_all_commands $(__git_aliases)"
