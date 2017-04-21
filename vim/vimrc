@@ -196,7 +196,7 @@ nnoremap yC "+Y
 vnoremap $ $h
 
 "save to temporary file
-command! MkTemp execute 'saveas! ' . system('mktemp')
+command! MkTemp execute (bufname('%') == '' ? 'write' : 'saveas') . '! ' . system('mktemp')
 
 "hex-editing tools
 command! HexDump %!xxd
