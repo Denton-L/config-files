@@ -190,7 +190,7 @@ nnoremap dcc "+dd
 nnoremap dC "+D
 nnoremap yc "+y
 nnoremap ycc "+yy
-nnoremap yC "+Y
+nmap yC "+Y
 
 "ensure visual mode $ doesn't delete newline
 vnoremap $ $h
