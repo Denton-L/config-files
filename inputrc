@@ -10,3 +10,5 @@ set keymap vi-move
 
 set keymap vi-insert
 "\C-l": clear-screen
+
+set bell-style none
