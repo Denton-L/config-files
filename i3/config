@@ -207,7 +207,7 @@ bindsym $sup+h exec chromium --app-id=knipolnnllmklapflnccelgolnpehhpl
 bindsym $sup+n exec chromium --incognito
 bindsym $sup+v exec gvim
 bindsym $sup+l exec i3lock -c FF7700 -d -f -e && sleep 1 && xset dpms force off
-bindsym $sup+f exec spacefm
+bindsym $sup+f exec pcmanfm
 bindsym $sup+t exec transmission-gtk
 bindsym $sup+x exec xcalc
 
