@@ -182,6 +182,7 @@ bar {
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioMicMute exec amixer -q set Capture toggle
 
 # Media keybindings
 bindsym XF86AudioPlay exec playerctl play-pause
