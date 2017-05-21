@@ -1,3 +1,5 @@
+umask 0077
+
 export PATH=~/bin:~/.bin:$PATH
 export GOPATH=~/go
 export VISUAL=vim
