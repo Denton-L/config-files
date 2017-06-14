@@ -171,7 +171,6 @@ nnoremap gO O<Esc>0C
 nnoremap S S<Esc>0C
 vnoremap S S<Esc>0C
 
-
 "make <Leader>o/O open (unjoin) lines
 nnoremap <Leader>o i<CR><Esc>
 nnoremap <Leader>O a<CR><Esc>
