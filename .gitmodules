@@ -1,32 +1,32 @@
-[submodule "vim/bundle/vim-surround"]
+[submodule "vim/pack/plugins/start/vim-surround"]
 	path = vim/pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 	branch = master
-[submodule "vim/bundle/vim-repeat"]
+[submodule "vim/pack/plugins/start/vim-repeat"]
 	path = vim/pack/plugins/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 	branch = master
-[submodule "vim/bundle/vim-eunuch"]
+[submodule "vim/pack/plugins/start/vim-eunuch"]
 	path = vim/pack/plugins/start/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
 	branch = master
-[submodule "vim/bundle/vim-colors-solarized"]
+[submodule "vim/pack/plugins/start/vim-colors-solarized"]
 	path = vim/pack/plugins/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 	branch = master
-[submodule "vim/bundle/vim-airline"]
+[submodule "vim/pack/plugins/start/vim-airline"]
 	path = vim/pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 	branch = master
-[submodule "vim/bundle/vim-airline-themes"]
+[submodule "vim/pack/plugins/start/vim-airline-themes"]
 	path = vim/pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
 	branch = master
-[submodule "vim/bundle/DidYouMean"]
+[submodule "vim/pack/plugins/start/DidYouMean"]
 	path = vim/pack/plugins/start/DidYouMean
 	url = https://github.com/EinfachToll/DidYouMean.git
 	branch = master
-[submodule "vim/bundle/vim-sleuth"]
+[submodule "vim/pack/plugins/start/vim-sleuth"]
 	path = vim/pack/plugins/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
 	branch = master
