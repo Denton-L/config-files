@@ -23,7 +23,7 @@ do
 	ln -sf $PWD/$f ~/.$f
 done
 
-[ -d ~/.config/i3 ] && rm -rf ~/.config/i3
+[ -d ~/.config/i3 ] && rm -rf ~/.config/i3 || mkdir -p ~/.config/i3
 ln -s $PWD/i3 ~/.config/i3
 
 ./update.sh
