@@ -1,0 +1,13 @@
+#!/bin/sh
+
+get_to_scissors() {
+	sed -e '/^# ------------------------ >8 ------------------------/,$d' "$1"
+}
+
+cleanup=`git config commit.cleanup`
+if [ "$cleanup" = 'whitespace' -o "$cleanup" = 'verbatim' -o "$cleanup" = 'scissors' ] && get_to_scissors "$1" | grep '^#' &> /dev/null
+then
+	printf 'Found commented lines in the commit message:\n'
+	get_to_scissors "$1"
+	exit 1
+fi

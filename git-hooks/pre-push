@@ -1,0 +1,30 @@
+#!/bin/sh
+
+remote="$1"
+url="$2"
+
+z40=0000000000000000000000000000000000000000
+
+while read local_ref local_sha remote_ref remote_sha
+do
+	if [ "$local_sha" != $z40 ]
+	then
+		if [ "$remote_sha" = $z40 ]
+		then
+			range="$local_sha"
+		else
+			range="`git merge-base $local_sha $remote_sha`..$local_sha"
+		fi
+
+		# check for invalid commit messages
+		commits=`git rev-list --grep '^fixup! ' --grep '^squash! ' "$range"`
+		if [ -n "$commits" ]
+		then
+			printf 'Found commits with invalid commit messages:\n'
+			git show --no-patch "$commits"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
