@@ -33,6 +33,7 @@
 [submodule "vim/pack/plugins/start/vim-bufonly"]
 	path = vim/pack/plugins/start/vim-bufonly
 	url = https://github.com/schickling/vim-bufonly.git
+	branch = master
 	ignore = dirty
 [submodule "vim/pack/plugins/start/vim-fugitive"]
 	path = vim/pack/plugins/start/vim-fugitive
