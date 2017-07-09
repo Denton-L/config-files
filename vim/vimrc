@@ -175,6 +175,9 @@ vnoremap S S<Esc>0C
 nnoremap <Leader>o i<CR><Esc>
 nnoremap <Leader>O a<CR><Esc>
 
+"make <Leader>d clear lines
+nnoremap <Leader>d 0D
+
 "make dm and cm (eliMinate) delete into blackhole register
 nnoremap dm "_d
 nnoremap dmm "_dd
