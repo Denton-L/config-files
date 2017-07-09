@@ -2,7 +2,7 @@ if has('gui_running')
 	if has('mac')
 		set guifont=Sauce\ Code\ Powerline:h12,Monaco:h10
 	elseif has('unix')
-		let fonts=['Source Code Pro for Powerline:Semibold 10', 'Misc Fixed:Medium Semi-Condensed 10', 'Ubuntu Mono:10']
+		let fonts=['Source Code Pro for Powerline:Semibold 11', 'Misc Fixed:Medium Semi-Condensed 10', 'Ubuntu Mono:10']
 		for font in fonts
 			let font_parts = split(font, ':')
 			if system('fc-match "' . font_parts[0] . '"') =~ font_parts[0]
