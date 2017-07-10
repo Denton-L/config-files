@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/pre-applypatch
+exec ~/.git-hooks/pre-applypatch "$@"

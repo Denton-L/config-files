@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/pre-auto-gc
+exec ~/.git-hooks/pre-auto-gc "$@"

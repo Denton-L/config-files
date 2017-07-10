@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/prepare-commit-msg
+exec ~/.git-hooks/prepare-commit-msg "$@"

@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/post-update
+exec ~/.git-hooks/post-update "$@"
