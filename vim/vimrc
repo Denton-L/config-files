@@ -148,15 +148,6 @@ augroup cmdwin_enter
 	autocmd CmdwinLeave * nnoremap <Enter> :
 augroup END
 
-"use C-[hjkl] for window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
-"remap missing C-l
-nnoremap <F5> <C-l>
-
 "make buffer navigation faster
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
