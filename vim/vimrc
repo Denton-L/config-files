@@ -149,10 +149,8 @@ augroup cmdwin_enter
 augroup END
 
 "make buffer navigation faster
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
-"remap <C-i> which is overwritten by <Tab> in CLI
-nnoremap <Leader>i <C-i>
+nnoremap <C-j> :bnext<CR>
+nnoremap <C-k> :bprevious<CR>
 
 "make go and gO start at the beginning of the line
 nnoremap go o<Esc>0C
