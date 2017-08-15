@@ -1,5 +1,5 @@
 #!/bin/sh
 
-i3lock -c FF7700 -d -f
+i3lock -fc FF7700
 sleep 1
 xset dpms force off
