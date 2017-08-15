@@ -6,7 +6,7 @@ do
 	[[ -f $f ]] && source $f
 done
 
-[[ -f $CONFIG_ROOT/.bin/completions.bash ]] && source $CONFIG_ROOT/.bin/completions.bash
+[[ -f $CONFIG_ROOT/bin/completions.bash ]] && source $CONFIG_ROOT/bin/completions.bash
 
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
