@@ -43,3 +43,7 @@
 	path = vim/pack/plugins/start/vim-localvimrc
 	url = https://github.com/Denton-L/vim-localvimrc.git
 	branch = master
+[submodule "vim/pack/plugins/start/vim-editorconfig"]
+	path = vim/pack/plugins/start/vim-editorconfig
+	url = https://github.com/sgur/vim-editorconfig.git
+	branch = master
