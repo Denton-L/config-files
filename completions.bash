@@ -48,4 +48,6 @@ _git_git() {
 } &&
 complete -F _git_git "git git"
 
+complete -F _ssh chromium-socks
+
 complete -F _command run
