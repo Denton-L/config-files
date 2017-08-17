@@ -6,7 +6,7 @@ _git_squash() {
 
 	return 0
 } &&
-complete -F _git_squash "git squash"
+complete -F _git_squash git-squash "git squash"
 
 _git_delete() {
 	if [[ "$COMP_CWORD" == "2" ]]
@@ -18,7 +18,7 @@ _git_delete() {
 
 	return 0
 } &&
-complete -F _git_delete "git delete"
+complete -F _git_delete git-delete "git delete"
 
 _git_push_up() {
 	if [[ "$COMP_CWORD" == "2" ]]
@@ -30,7 +30,7 @@ _git_push_up() {
 
 	return 0
 } &&
-complete -F _git_push_up "git push-up"
+complete -F _git_push_up git-push-up "git push-up"
 
 _git_squash_rebase() {
 	if [[ "$COMP_CWORD" == "2" ]]
@@ -40,13 +40,13 @@ _git_squash_rebase() {
 
 	return 0
 } &&
-complete -F _git_squash_rebase "git squash-rebase"
+complete -F _git_squash_rebase git-squash-rebase "git squash-rebase"
 
 _git_git() {
 	__git_compute_all_commands
 	__gitcomp "$__git_all_commands $(__git_aliases)"
 } &&
-complete -F _git_git "git git"
+complete -F _git_git git-git "git git"
 
 complete -F _ssh chromium-socks
 

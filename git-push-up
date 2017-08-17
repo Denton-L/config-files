@@ -2,4 +2,4 @@
 
 remote="$1"
 shift
-git push --set-upstream "$remote" `git symbolic-ref --short -q HEAD` "$@"
+exec git push --set-upstream "$remote" `git symbolic-ref --short -q HEAD` "$@"
