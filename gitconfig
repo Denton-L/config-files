@@ -14,7 +14,6 @@
 	reword = commit --amend
 	prune-merged = !git-prune-merged
 	delete = !git-delete
-	push-up = !git-push-up
 	squash = !git-squash
 	squash-rebase = !git-squash-rebase
 [diff]
