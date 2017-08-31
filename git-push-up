@@ -1,5 +1,0 @@
-#!/bin/sh
-
-remote="$1"
-shift
-exec git push --set-upstream "$remote" `git symbolic-ref --short -q HEAD` "$@"

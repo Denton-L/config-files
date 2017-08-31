@@ -20,18 +20,6 @@ _git_delete() {
 } &&
 complete -F _git_delete git-delete "git delete"
 
-_git_push_up() {
-	if [[ "$COMP_CWORD" == "2" ]]
-	then
-		__gitcomp_nl "$(__git_remotes)"
-	else
-		_git_push
-	fi
-
-	return 0
-} &&
-complete -F _git_push_up git-push-up "git push-up"
-
 _git_squash_rebase() {
 	if [[ "$COMP_CWORD" == "2" ]]
 	then
