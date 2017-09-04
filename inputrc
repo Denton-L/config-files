@@ -12,4 +12,4 @@ set keymap vi-insert
 "\C-l": clear-screen
 
 set bell-style none
-set keyseq-timeout 0
+set keyseq-timeout 1
