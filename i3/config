@@ -21,6 +21,9 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# start i3-input
+bindsym $mod+i exec --no-startup-id i3-input
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
