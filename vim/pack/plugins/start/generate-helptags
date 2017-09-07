@@ -2,5 +2,5 @@
 
 for f in */doc
 do
-	vim -u /dev/null -c "helptags $f" -c "q" &> /dev/null &
+	vim -u /dev/null -c "helptags $f" -c "q" > /dev/null 2>&1 &
 done
