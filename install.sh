@@ -12,6 +12,7 @@ git-template
 gitconfig
 globalgitignore
 inputrc
+profile
 sshrc
 sshrc.d
 vim
