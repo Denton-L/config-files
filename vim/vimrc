@@ -28,6 +28,7 @@ set ruler
 
 "enable completion for command-line
 set wildmenu
+set wildmode=longest:full
 
 "change spellcheck to english
 set spelllang=en
