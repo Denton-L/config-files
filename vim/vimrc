@@ -125,9 +125,6 @@ augroup END
 "make Y behave like D and C
 nnoremap Y y$
 
-"add theming
-set background=dark
-
 "smarter tabline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_close_button = 0
