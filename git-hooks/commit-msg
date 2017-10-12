@@ -5,7 +5,7 @@ get_to_scissors() {
 }
 
 cleanup=`git config commit.cleanup`
-if [ "$cleanup" = 'whitespace' -o "$cleanup" = 'verbatim' -o "$cleanup" = 'scissors' ] && get_to_scissors "$1" | grep '^#' &> /dev/null
+if [ "$cleanup" = 'whitespace' -o "$cleanup" = 'verbatim' -o "$cleanup" = 'scissors' ] && get_to_scissors "$1" | grep '^#' > /dev/null 2>&1
 then
 	printf 'Found commented lines in the commit message:\n'
 	get_to_scissors "$1"
