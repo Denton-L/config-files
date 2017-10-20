@@ -1,7 +1,7 @@
 CONFIG_ROOT=${SSHHOME:-~}
 shopt -s autocd checkwinsize checkjobs extglob
 
-for f in $CONFIG_ROOT/.config-files/bashrc_sources/*
+[[ -d $CONFIG_ROOT/.config-files/bashrc_sources/ ]] && for f in $CONFIG_ROOT/.config-files/bashrc_sources/*
 do
 	[[ -f $f ]] && source $f
 done
