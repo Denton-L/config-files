@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+import http.server
+import io
+import socketserver
+import subprocess
+import sys
+
+PORT = int(sys.argv[1])
+ENDPOINT = '/lock'
+INDEX_PAGE = b'''
+<html>
+    <head>
+        <title>HTTP Screen Locker</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>
+function lock() {
+    $.post("/lock");
+}
+        </script>
+    </head>
+    <body>
+        <button onclick="lock()">Lock</button>
+    </body>
+</html>
+'''
+
+class LockHandler(http.server.BaseHTTPRequestHandler):
+    def __init__(self, request, client_address, server):
+        http.server.SimpleHTTPRequestHandler.__init__(self, request, client_address, server)
+
+    def do_GET(self):
+        if self.path == '/':
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html")
+            self.end_headers()
+            self.wfile.write(INDEX_PAGE)
+        else:
+            self.send_response(404)
+            self.end_headers()
+
+
+    def do_POST(self):
+        if self.path == ENDPOINT:
+            print('Locking screen.')
+            subprocess.Popen(['lock-screen'])
+            self.send_response(200)
+        else:
+            self.send_response(404)
+
+        self.end_headers()
+
+if __name__ == '__main__':
+    with socketserver.TCPServer(('', PORT), LockHandler) as httpd:
+        print('Starting remote-lock server.')
+        httpd.serve_forever()

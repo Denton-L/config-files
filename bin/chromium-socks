@@ -1,0 +1,29 @@
+#!/bin/sh
+
+SOCKET_LOCATION="/tmp/socks.%C"
+
+ssh_args=""
+chromium_args=""
+ssh_args_done="false"
+
+# TODO: fix argument passing for quoted arguments
+for arg
+do
+	if [ "$arg" = "--" ]
+	then
+		ssh_args_done="true"
+		continue
+	fi
+
+	if [ "$ssh_args_done" = "true" ]
+	then
+		chromium_args="$chromium_args $arg"
+	else
+		ssh_args="$ssh_args $arg"
+	fi
+done
+
+ssh -fCND 1080 -MS "$SOCKET_LOCATION" $ssh_args
+killall chromium
+chromium --proxy-server="socks5://localhost:1080" --host-resolver-rules="MAP * 0.0.0.0, EXCLUDE localhost" "$chromium_args"
+ssh -S "$SOCKET_LOCATION" -O exit $ssh_args

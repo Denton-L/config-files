@@ -1,0 +1,7 @@
+#!/bin/sh
+
+TEMP=temp
+
+i3-msg "rename workspace $1 to $TEMP"
+i3-msg "rename workspace $2 to $1"
+i3-msg "rename workspace $TEMP to $2"
