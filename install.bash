@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 readonly dotfiles='
 Xmodmap
@@ -25,15 +25,15 @@ i3
 
 for f in $dotfiles
 do
-	[ -d ~/.$f ] && rm -rf ~/.$f
-	ln -sf $PWD/$f ~/.$f
+	[[ -d ~/."$f" ]] && rm -rf ~/."$f"
+	ln -sf "$PWD/$f" ~/."$f"
 done
 
 mkdir -p ~/.config
 for f in $configfiles
 do
-	[ -d ~/.config/$f ] && rm -rf ~/.config/$f
-	ln -sf $PWD/$f ~/.config/$f
+	[[ -d ~/.config/"$f" ]] && rm -rf ~/.config/"$f"
+	ln -sf "$PWD/$f" ~/.config/"$f"
 done
 
-./update.sh
+./update.bash
