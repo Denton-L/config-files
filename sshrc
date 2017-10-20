@@ -1,11 +1,11 @@
-bind -f $SSHHOME/.sshrc.d/inputrc
-. $SSHHOME/.sshrc.d/bash_profile
-. $SSHHOME/.sshrc.d/bashrc
+bind -f "$SSHHOME"/.sshrc.d/inputrc
+. "$SSHHOME"/.sshrc.d/bash_profile
+. "$SSHHOME"/.sshrc.d/bashrc
 
-$SSHHOME/.sshrc.d/update.sh &> /dev/null
-for f in $SSHHOME/bashrc_sources/*
+"$SSHHOME"/.sshrc.d/update.bash > /dev/null 2>&1
+for f in "$SSHHOME"/bashrc_sources/*
 do
-	. $f
+	. "$f"
 done
 
 export VIMINIT='let $MYVIMRC="$SSHHOME/.sshrc.d/vimrc" | source $MYVIMRC'

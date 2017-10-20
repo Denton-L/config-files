@@ -7,12 +7,12 @@ fi
 
 shopt -s autocd checkwinsize checkjobs extglob
 
-[[ -d "$CONFIG_ROOT/.config-files/bashrc_sources/" ]] && for f in "$CONFIG_ROOT/.config-files/bashrc_sources/*"
+[[ -d "$CONFIG_ROOT"/.config-files/bashrc_sources/ ]] && for f in "$CONFIG_ROOT"/.config-files/bashrc_sources/*
 do
 	[[ -f "$f" ]] && source "$f"
 done
 
-[[ -f "$CONFIG_ROOT/bin/completions.bash" ]] && source "$CONFIG_ROOT/bin/completions.bash"
+[[ -f "$CONFIG_ROOT"/bin/completions.bash ]] && source "$CONFIG_ROOT"/bin/completions.bash
 
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
