@@ -36,4 +36,7 @@ do
 	ln -sf "$PWD/$f" ~/.config/"$f"
 done
 
+[[ -d ~/bin/ ]] && rm -rf ~/bin
+ln -sf "$PWD/bin" ~/bin
+
 ./update.bash
