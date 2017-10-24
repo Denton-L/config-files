@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/post-rewrite "$@"
+[ -f ~/.git-hooks/post-rewrite ] && exec ~/.git-hooks/post-rewrite "$@"

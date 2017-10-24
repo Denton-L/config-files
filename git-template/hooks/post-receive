@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/post-receive "$@"
+[ -f ~/.git-hooks/post-receive ] && exec ~/.git-hooks/post-receive "$@"

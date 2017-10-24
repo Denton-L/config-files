@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/pre-rebase "$@"
+[ -f ~/.git-hooks/pre-rebase ] && exec ~/.git-hooks/pre-rebase "$@"

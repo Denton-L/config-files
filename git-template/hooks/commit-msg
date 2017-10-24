@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/commit-msg "$@"
+[ -f ~/.git-hooks/commit-msg ] && exec ~/.git-hooks/commit-msg "$@"

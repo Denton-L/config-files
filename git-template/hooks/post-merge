@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/post-merge "$@"
+[ -f ~/.git-hooks/post-merge ] && exec ~/.git-hooks/post-merge "$@"

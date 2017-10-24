@@ -1,2 +1,2 @@
 #!/bin/sh
-exec ~/.git-hooks/pre-push "$@"
+[ -f ~/.git-hooks/pre-push ] && exec ~/.git-hooks/pre-push "$@"
