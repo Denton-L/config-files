@@ -1,5 +1,5 @@
 xterm*saveLines: 2000
-xterm*termName: xterm-color
+xterm*termName: xterm-256color
 xterm*background: black
 xterm*foreground: green
 xterm*bellIsUrgent: true
