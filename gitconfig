@@ -13,6 +13,7 @@
 	amend = commit --amend --no-edit
 	reword = commit --amend
 	prune-merged = !git-prune-merged
+	prune-cherry = !git-prune-cherry
 	delete = !git-delete
 	squash = !git-squash
 	squash-rebase = !git-squash-rebase
