@@ -2,5 +2,5 @@
 
 for branch in `git branch | grep -v "^*"`
 do
-	git cherry HEAD $branch | grep '+' || git branch -D $branch
+	git cherry HEAD $branch | grep '+' > /dev/null || git branch -D $branch
 done
