@@ -78,6 +78,9 @@ set path+=**
 "use vi-like backspace
 set backspace=
 
+"ensure visual mode $ doesn't delete newline
+set selection=old
+
 "use blowfish2 as default encryption method
 try
 	set cryptmethod=blowfish2
@@ -182,9 +185,6 @@ nnoremap dC "+D
 nnoremap yc "+y
 nnoremap ycc "+yy
 nmap yC "+Y
-
-"ensure visual mode $ doesn't delete newline
-vnoremap $ $h
 
 "save to temporary file
 command! MkTemp execute (bufname('%') == '' ? 'write' : 'saveas') . '! ' . system('mktemp')
