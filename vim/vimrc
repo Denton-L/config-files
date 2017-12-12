@@ -48,6 +48,10 @@ filetype plugin indent on
 "enable syntax highlighting
 syntax on
 
+"set dark background with hack to fix xterm support
+set t_RS=
+set background=dark
+
 "search defaults
 set incsearch
 
