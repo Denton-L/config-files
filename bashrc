@@ -14,6 +14,10 @@ done
 
 [[ -f "$CONFIG_ROOT"/bin/completions.bash ]] && source "$CONFIG_ROOT"/bin/completions.bash
 
+detach() {
+	bg "$1" && disown "$1"
+}
+
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
 } &&
