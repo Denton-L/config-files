@@ -47,3 +47,7 @@
 	path = vim/pack/plugins/start/vim-editorconfig
 	url = https://github.com/sgur/vim-editorconfig.git
 	branch = master
+[submodule "vim/pack/plugins/start/vimtex"]
+	path = vim/pack/plugins/start/vimtex
+	url = https://github.com/lervag/vimtex.git
+	branch = master
