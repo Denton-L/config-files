@@ -145,6 +145,9 @@ let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
 
+"change vimtex leader key
+let g:vimtex_imaps_leader = '~'
+
 "make : faster
 nnoremap <Enter> :
 vnoremap <Enter> :
