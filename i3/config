@@ -163,6 +163,7 @@ mode "volume" {
 	bindsym 8 exec amixer -q set Master 80% unmute; mode "default"
 	bindsym 9 exec amixer -q set Master 90% unmute; mode "default"
 	bindsym 0 exec amixer -q set Master 100% unmute; mode "default"
+	bindsym minus exec amixer -q set Master 100% mute; mode "default"
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
