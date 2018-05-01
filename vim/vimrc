@@ -117,6 +117,7 @@ nnoremap <expr> <Down> v:count ? 'j' : 'gj'
 
 "remove trailing spaces with Leader-t
 nnoremap <Leader>t :%s/\s\+$//<CR>:nohlsearch<CR>
+vnoremap <Leader>t :s/\s\+$//<CR>:nohlsearch<CR>
 
 "break undoing sequence when doing deletes
 inoremap <C-u> <C-g>u<C-u>
