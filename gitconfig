@@ -8,8 +8,7 @@
 	no-ff = merge --no-ff
 	graph = log --graph
 	please = push --force-with-lease
-	ignore = update-index --assume-unchanged
-	unignore = update-index --no-assume-unchanged
+	ignore = !git-ignore
 	amend = commit --amend --no-edit
 	reword = commit --amend
 	prune-merged = !git-prune-merged

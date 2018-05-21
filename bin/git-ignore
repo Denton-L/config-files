@@ -1,0 +1,29 @@
+#!/bin/sh
+
+usage() {
+	echo usage:
+	echo "$0 [on|off] <file>..."
+	echo "$0 list"
+	echo "$0 help"
+}
+
+subcommand="$1"
+shift
+
+case "$subcommand" in
+	on)
+	   git update-index --assume-unchanged "$@"
+	   ;;
+	off)
+	   git update-index --no-assume-unchanged "$@"
+	   ;;
+	list)
+	   git ls-files -v | grep '^h' | cut -d ' ' -f 2-
+	   ;;
+	help)
+		usage
+		;;
+	*)
+		echo Invalid command.
+		usage
+esac
