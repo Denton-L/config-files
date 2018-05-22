@@ -1,11 +1,15 @@
 #!/bin/sh
 
-usage() {
-	echo usage:
-	echo "$0 [on|off] <file>..."
-	echo "$0 list"
-	echo "$0 help"
-}
+SUBDIRECTORY_OK=yes
+USAGE='[on|off|list] [<file>...]'
+
+. "`git --exec-path`/git-sh-setup"
+
+if [ $# -eq 0 ]
+then
+	echo Command required.
+	usage
+fi
 
 subcommand="$1"
 shift
@@ -20,10 +24,8 @@ case "$subcommand" in
 	list)
 	   git ls-files -v | grep '^h' | cut -d ' ' -f 2-
 	   ;;
-	help)
-		usage
-		;;
 	*)
 		echo Invalid command.
 		usage
+		;;
 esac

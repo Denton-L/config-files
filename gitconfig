@@ -8,14 +8,8 @@
 	no-ff = merge --no-ff
 	graph = log --graph
 	please = push --force-with-lease
-	ignore = !git-ignore
 	amend = commit --amend --no-edit
 	reword = commit --amend
-	prune-merged = !git-prune-merged
-	prune-cherry = !git-prune-cherry
-	delete = !git-delete
-	squash = !git-squash
-	squash-rebase = !git-squash-rebase
 [diff]
 	tool = vimdiff
 	guitool = gvimdiff

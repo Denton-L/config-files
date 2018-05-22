@@ -36,6 +36,30 @@ completions() {
 	} &&
 	complete -F _git_squash_rebase git-squash-rebase "git squash-rebase"
 
+	command -v __gitcomp_nl &&
+	command -v __git_find_on_cmdline &&
+	command -v __gitcomp_file &&
+	_git_ignore() {
+		local subcommands='on off list'
+		local subcommand="$(__git_find_on_cmdline "$subcommands")"
+
+		if [[ -z "$subcommand" ]]
+		then
+			__gitcomp "$subcommands"
+		else
+			case "$subcommand" in
+				on|off)
+					__gitcomp_file
+					;;
+				list)
+					;;
+			esac
+		fi
+
+		return 0
+	} &&
+	complete -F _git_ignore git-ignore "git ignore"
+
 	command -v __git_compute_all_commands &&
 	command -v __gitcomp &&
 	command -v __git_all_commands &&
