@@ -36,8 +36,8 @@ completions() {
 	} &&
 	complete -F _git_squash_rebase git-squash-rebase "git squash-rebase"
 
-	command -v __gitcomp_nl &&
 	command -v __git_find_on_cmdline &&
+	command -v __gitcomp &&
 	command -v __gitcomp_file &&
 	_git_ignore() {
 		local subcommands='on off list'
@@ -48,8 +48,14 @@ completions() {
 			__gitcomp "$subcommands"
 		else
 			case "$subcommand" in
-				on|off)
+				on)
 					__gitcomp_file
+					;;
+				off)
+					if git rev-parse --is-inside-work-tree &> /dev/null
+					then
+						__gitcomp "$(git ignore list)"
+					fi
 					;;
 				list)
 					;;
