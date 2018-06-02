@@ -146,11 +146,14 @@ let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
 
-" allow mixed indent for /* */ comments
+"allow mixed indent for /* */ comments
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 "change vimtex leader key
 let g:vimtex_imaps_leader = '~'
+
+"make vim-localvimrc make loaded files persistent
+let g:localvimrc_persistent = 1
 
 "make : faster
 nnoremap <Enter> :
