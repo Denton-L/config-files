@@ -36,6 +36,34 @@ completions() {
 	} &&
 	complete -F _git_squash_rebase git-squash-rebase "git squash-rebase"
 
+	command -v __gitcomp_nl &&
+	command -v __git_remotes &&
+	command -v __git_heads &&
+	_git_fetch_branch() {
+		if [[ "$COMP_CWORD" == "2" ]]
+		then
+			__gitcomp_nl "$(__git_remotes)"
+		elif [[ "$COMP_CWORD" == "3" ]]
+		then
+			__gitcomp_nl "$(__git_heads)"
+		fi
+
+		return 0
+	} &&
+	complete -F _git_fetch_branch git-fetch-branch "git fetch-branch"
+
+	command -v __gitcomp_nl &&
+	command -v __git_remotes &&
+	_git_push_up() {
+		if [[ "$COMP_CWORD" == "2" ]]
+		then
+			__gitcomp_nl "$(__git_remotes)"
+		fi
+
+		return 0
+	} &&
+	complete -F _git_push_up git-push-up "git push-up"
+
 	command -v __git_find_on_cmdline &&
 	command -v __gitcomp &&
 	command -v __gitcomp_file &&
