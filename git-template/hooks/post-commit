@@ -1,2 +1,0 @@
-#!/bin/sh
-[ -f ~/.git-hooks/post-commit ] && exec ~/.git-hooks/post-commit "$@"

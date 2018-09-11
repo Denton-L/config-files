@@ -1,2 +1,0 @@
-#!/bin/sh
-[ -f ~/.git-hooks/post-applypatch ] && exec ~/.git-hooks/post-applypatch "$@"

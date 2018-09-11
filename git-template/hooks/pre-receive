@@ -1,2 +1,0 @@
-#!/bin/sh
-[ -f ~/.git-hooks/pre-receive ] && exec ~/.git-hooks/pre-receive "$@"

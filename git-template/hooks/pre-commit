@@ -1,2 +1,0 @@
-#!/bin/sh
-[ -f ~/.git-hooks/pre-commit ] && exec ~/.git-hooks/pre-commit "$@"

@@ -1,2 +1,0 @@
-#!/bin/sh
-[ -f ~/.git-hooks/prepare-commit-msg ] && exec ~/.git-hooks/prepare-commit-msg "$@"

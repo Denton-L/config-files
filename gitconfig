@@ -25,11 +25,10 @@
 	trustExitCode = true
 [core]
 	excludesfile = ~/.globalgitignore
+	hooksPath = ~/.git-hooks/
 [help]
 	autocorrect = 10
 [rerere]
 	enabled = true
 [rebase]
 	autosquash = true
-[init]
-	templatedir = ~/.git-template

@@ -8,7 +8,6 @@ bash_profile
 bashrc
 ctags
 git-hooks
-git-template
 gitconfig
 globalgitignore
 inputrc
