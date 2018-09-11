@@ -51,3 +51,6 @@
 	path = vim/pack/plugins/start/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc.git
 	branch = master
+[submodule "vim/pack/plugins/start/vim-unimpaired"]
+	path = vim/pack/plugins/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git

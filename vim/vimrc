@@ -102,9 +102,6 @@ nnoremap <Leader>c :set hlsearch! hlsearch?<CR>
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``zz
 
-"map F3 to toggle spellcheck
-nnoremap <F3> :set spell! spell?<CR>
-
 "search selection with Leader-s
 nnoremap <Leader>s *N
 vnoremap <Leader>s y/<C-r>"<CR>``
@@ -164,10 +161,6 @@ augroup cmdwin_enter
 	autocmd CmdwinEnter * nunmap <Enter>
 	autocmd CmdwinLeave * nnoremap <Enter> :
 augroup END
-
-"make buffer navigation faster
-nnoremap <C-j> :bnext<CR>
-nnoremap <C-k> :bprevious<CR>
 
 "make go and gO start at the beginning of the line
 nnoremap go o<Esc>0C
