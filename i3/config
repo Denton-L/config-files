@@ -219,7 +219,6 @@ bindsym XF86Display exec arandr
 # Program keybindings
 bindsym $sup+p exec arandr
 bindsym $sup+c exec chromium
-bindsym $sup+h exec chromium --app-id=knipolnnllmklapflnccelgolnpehhpl
 bindsym $sup+n exec chromium --incognito
 bindsym $sup+v exec gvim
 bindsym $sup+l exec lock-screen
@@ -228,5 +227,4 @@ bindsym $sup+t exec transmission-gtk
 bindsym $sup+x exec xcalc
 
 # Floating window configurations
-for_window [title="Hangouts"] floating disabled
 for_window [title="Calculator"] floating enabled
