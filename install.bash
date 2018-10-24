@@ -11,6 +11,7 @@ git-hooks
 gitconfig
 globalgitignore
 inputrc
+mutt
 profile
 sshrc
 sshrc.d
