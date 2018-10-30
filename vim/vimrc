@@ -96,9 +96,6 @@ set notimeout
 set ttimeout
 set ttimeoutlen=0
 
-"toggle highlighting on <Leader>c
-nnoremap <Leader>c :set hlsearch! hlsearch?<CR>
-
 "auto-indent code on cu (clean up)
 nnoremap cu gg=G``zz
 
