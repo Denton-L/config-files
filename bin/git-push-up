@@ -1,3 +1,5 @@
 #!/bin/sh
 
-exec git push -u "$1" HEAD
+remote="$1"
+shift
+exec git push "$@" -u "$remote" HEAD
