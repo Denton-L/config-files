@@ -150,6 +150,9 @@
     # Paths to default icons.
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
+[fullscreen_delay_everything]
+    fullscreen = delay
+
 [frame]
     width = 3
     color = "#aaaaaa"
