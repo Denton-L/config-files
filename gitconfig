@@ -12,14 +12,12 @@
 	reword = commit --amend
 [diff]
 	tool = vimdiff
-	guitool = gvimdiff
+	guitool = meld
 [difftool]
 	prompt = false
 	trustExitCode = true
 [merge]
 	conflictStyle = diff3
-	tool = vimdiff
-	guitool = gvimdiff
 [mergetool]
 	prompt = false
 	trustExitCode = true
