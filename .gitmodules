@@ -47,7 +47,7 @@
 	path = vim/pack/plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
 	branch = master
-[submodule "vim-localvimrc"]
+[submodule "vim/pack/plugins/start/vim-localvimrc"]
 	path = vim/pack/plugins/start/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc.git
 	branch = master
