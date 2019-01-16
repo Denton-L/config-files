@@ -1,61 +1,46 @@
 [submodule "vim/pack/plugins/start/vim-surround"]
 	path = vim/pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-repeat"]
 	path = vim/pack/plugins/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-eunuch"]
 	path = vim/pack/plugins/start/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-colors-solarized"]
 	path = vim/pack/plugins/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-airline"]
 	path = vim/pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-airline-themes"]
 	path = vim/pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-	branch = master
 [submodule "vim/pack/plugins/start/DidYouMean"]
 	path = vim/pack/plugins/start/DidYouMean
 	url = https://github.com/EinfachToll/DidYouMean.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-sleuth"]
 	path = vim/pack/plugins/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-bufonly"]
 	path = vim/pack/plugins/start/vim-bufonly
 	url = https://github.com/schickling/vim-bufonly.git
-	branch = master
 	ignore = dirty
 [submodule "vim/pack/plugins/start/vim-fugitive"]
 	path = vim/pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-editorconfig"]
 	path = vim/pack/plugins/start/vim-editorconfig
 	url = https://github.com/sgur/vim-editorconfig.git
-	branch = master
 [submodule "vim/pack/plugins/start/vimtex"]
 	path = vim/pack/plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-localvimrc"]
 	path = vim/pack/plugins/start/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-unimpaired"]
 	path = vim/pack/plugins/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-	branch = master
 [submodule "vim/pack/plugins/start/vim-exchange"]
 	path = vim/pack/plugins/start/vim-exchange
 	url = https://github.com/tommcdo/vim-exchange.git
-	branch = master
