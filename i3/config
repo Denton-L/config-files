@@ -218,8 +218,7 @@ bindsym XF86Display exec arandr
 
 # Program keybindings
 bindsym $sup+p exec arandr
-bindsym $sup+c exec chromium
-bindsym $sup+n exec chromium --incognito
+bindsym $sup+c exec firefox
 bindsym $sup+v exec gvim
 bindsym $sup+l exec lock-screen
 bindsym $sup+f exec pcmanfm
