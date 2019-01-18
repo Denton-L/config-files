@@ -21,6 +21,9 @@ detach() {
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
 } &&
+pushdup() {
+	pushd . && cdup "$@"
+} &&
 _cdup() {
 	COMPREPLY=()
 
@@ -31,7 +34,8 @@ _cdup() {
 		return 0
 	fi
 } &&
-complete -F _cdup cdup
+complete -F _cdup cdup &&
+complete -F _cdup pushdup &&
 type -t _ssh &> /dev/null && complete -F _ssh sshrc
 
 alias sl=ls
