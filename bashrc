@@ -17,7 +17,7 @@ shopt -s checkwinsize checkjobs extglob
 
 [[ -d "$CONFIG_ROOT"/.config-files/bashrc_sources/ ]] && for f in "$CONFIG_ROOT"/.config-files/bashrc_sources/*
 do
-	[[ -f "$f" ]] && source "$f"
+	source "$f"
 done
 
 [[ -f "$CONFIG_ROOT"/bin/completions.bash ]] && source "$CONFIG_ROOT"/bin/completions.bash
