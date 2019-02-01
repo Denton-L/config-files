@@ -1,3 +1,11 @@
+export HISTCONTROL=ignoredups
+export HISTSIZE=1000
+export HISTFILESIZE=-1
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM=auto
+
 if [[ -z "$SSHHOME" ]]
 then
 	CONFIG_ROOT=~
@@ -9,7 +17,7 @@ shopt -s checkwinsize checkjobs extglob
 
 [[ -d "$CONFIG_ROOT"/.config-files/bashrc_sources/ ]] && for f in "$CONFIG_ROOT"/.config-files/bashrc_sources/*
 do
-	[[ -f "$f" ]] && source "$f"
+	source "$f"
 done
 
 [[ -f "$CONFIG_ROOT"/bin/completions.bash ]] && source "$CONFIG_ROOT"/bin/completions.bash

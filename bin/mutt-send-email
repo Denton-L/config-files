@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for e in "$@"
+do
+	mutt -H "$e" < /dev/null
+done
