@@ -39,4 +39,4 @@ done
 [[ -d ~/bin/ ]] && rm -rf ~/bin
 ln -sf "$PWD/bin" ~/bin
 
-./update.bash
+./update.sh
