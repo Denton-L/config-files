@@ -2,7 +2,7 @@ bind -f "$SSHHOME"/.sshrc.d/inputrc
 . "$SSHHOME"/.sshrc.d/bash_profile
 . "$SSHHOME"/.sshrc.d/bashrc
 
-"$SSHHOME"/.sshrc.d/update.bash > /dev/null 2>&1
+"$SSHHOME"/.sshrc.d/update.sh > /dev/null 2>&1
 for f in "$SSHHOME"/bashrc_sources/*
 do
 	. "$f"

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+remote="$1"
+if [ $# -eq 2 ]
+then
+	src=`git rev-parse --abbrev-ref HEAD`
+elif [ $# -eq 3 ]
+then
+	src="$2"
+	shift
+else
+	echo Invalid number of arguments.
+	exit 1
+fi
+dst="$2"
+
+git push --delete "$remote" "$src"
+git branch -m "$src" "$dst"
+git push -u "$remote" "$dst"
