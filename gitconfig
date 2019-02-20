@@ -13,6 +13,7 @@
 [diff]
 	tool = vimdiff
 	guitool = meld
+	wsErrorHighlight = all
 [difftool]
 	prompt = false
 	trustExitCode = true
