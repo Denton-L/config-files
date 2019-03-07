@@ -32,3 +32,5 @@
 	enabled = true
 [rebase]
 	autosquash = true
+[commit]
+	cleanup = scissors
