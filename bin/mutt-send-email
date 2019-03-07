@@ -2,5 +2,5 @@
 
 for e in "$@"
 do
-	mutt -H "$e" < /dev/null
+	mutt -H "$e" < /dev/null || exit 1
 done
