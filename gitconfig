@@ -34,3 +34,5 @@
 	autosquash = true
 [commit]
 	cleanup = scissors
+[log]
+	date = auto:human
