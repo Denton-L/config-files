@@ -10,6 +10,7 @@
 	please = push --force-with-lease
 	amend = commit --amend --no-edit
 	reword = commit --amend
+	summary = show -s --date=short --pretty='format:%h ("%s", %ad)'
 [diff]
 	tool = vimdiff
 	guitool = meld
@@ -33,3 +34,7 @@
 	autosquash = true
 [url "git@gitlab.neji.vm.tc:"]
 	insteadOf = https://gitlab.neji.vm.tc/
+[commit]
+	cleanup = scissors
+[log]
+	date = auto:human
