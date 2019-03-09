@@ -12,7 +12,7 @@
 	reword = commit --amend
 	summary = show -s --date=short --pretty='format:%h ("%s", %ad)'
 [diff]
-	tool = vimdiff
+	tool = vimdiff3
 	guitool = meld
 	wsErrorHighlight = all
 [difftool]
