@@ -12,13 +12,13 @@
 	reword = commit --amend
 	summary = show -s --date=short --pretty='format:%h ("%s", %ad)'
 [diff]
-	tool = vimdiff
-	guitool = meld
 	wsErrorHighlight = all
 [difftool]
 	prompt = false
 	trustExitCode = true
 [merge]
+	tool = vimdiff3
+	guitool = meld
 	conflictStyle = diff3
 [mergetool]
 	prompt = false
