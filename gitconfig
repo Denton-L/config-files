@@ -38,3 +38,5 @@
 	cleanup = scissors
 [log]
 	date = auto:human
+[http]
+	cookiefile = /home/denton/.gitcookies
