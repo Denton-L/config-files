@@ -94,6 +94,14 @@ completions() {
 	} &&
 	complete -F _git_ignore git-ignore "git ignore"
 
+	command -v __git_complete_revlist &&
+	_git_view_conflict() {
+		__git_complete_revlist
+
+		return 0
+	} &&
+	complete -F _git_view_conflict git-view-conflict "git view-conflict"
+
 	command -v __git_compute_all_commands &&
 	command -v __gitcomp &&
 	command -v __git_all_commands &&

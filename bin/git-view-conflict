@@ -1,0 +1,30 @@
+#!/bin/sh
+
+SUBDIRECTORY_OK=yes
+USAGE='<merge-commit>'
+
+. "`git --exec-path`/git-sh-setup"
+
+if [ "$#" -eq 0 ]
+then
+	usage
+fi
+
+require_clean_work_tree "view conflicts"
+
+perform_merge() {
+	if [ "$#" -lt 2 ]
+	then
+		die You must provide a merge commit.
+	fi
+
+	main_parent="$1"
+	shift
+
+	(git checkout --detach "$main_parent" && ! git merge --no-rerere-autoupdate "$@") >/dev/null 2>&1
+}
+
+current_head=`git rev-parse --abbrev-ref HEAD`
+commit=`peel_committish "$1"` || usage
+perform_merge `git show -s --format=%P "$commit"` && git diff -R "$commit"
+git reset --hard "$current_head" >/dev/null
