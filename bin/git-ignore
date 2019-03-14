@@ -3,7 +3,7 @@
 SUBDIRECTORY_OK=yes
 USAGE='[on|off|list] [<file>...]'
 
-. "`git --exec-path`/git-sh-setup"
+. "$(git --exec-path)/git-sh-setup"
 
 if [ $# -eq 0 ]
 then
