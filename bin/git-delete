@@ -2,4 +2,4 @@
 
 remote="$1"
 shift
-exec git push --delete "$remote" "$@" && git branch -D "$@"
+git push --delete "$remote" "$@" && git branch -D "$@"
