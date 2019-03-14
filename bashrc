@@ -52,7 +52,6 @@ alias la='ls -a'
 alias lla='ls -la'
 alias emacs=vim
 alias edtemp='$VISUAL $(mktemp)'
-alias find-name='find . -name'
 
 PS1='[\u@\h \W$(__git_ps1 2>/dev/null)$(e=$?; [[ $e -eq 0 ]] || echo " ($e)")]\n\$ '
 

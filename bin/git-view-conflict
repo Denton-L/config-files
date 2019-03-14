@@ -3,7 +3,7 @@
 SUBDIRECTORY_OK=yes
 USAGE='<merge-commit>'
 
-. "`git --exec-path`/git-sh-setup"
+. "$(git --exec-path)/git-sh-setup"
 
 if [ "$#" -eq 0 ]
 then
@@ -24,7 +24,7 @@ perform_merge() {
 	(git checkout --detach "$main_parent" && ! git merge --no-rerere-autoupdate "$@") >/dev/null 2>&1
 }
 
-current_head=`git rev-parse --abbrev-ref HEAD`
-commit=`peel_committish "$1"` || usage
-perform_merge `git rev-parse "$commit"^@` && git diff -R "$commit"
+current_head="$(git rev-parse --abbrev-ref HEAD)"
+commit="$(peel_committish "$1")" || usage
+perform_merge $(git rev-parse "$commit"^@) && git diff -R "$commit"
 git reset --hard "$current_head" >/dev/null
