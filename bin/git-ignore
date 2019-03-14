@@ -16,14 +16,20 @@ shift
 
 case "$subcommand" in
 	on)
-	   git update-index --assume-unchanged "$@"
-	   ;;
+		git update-index --assume-unchanged "$@"
+		;;
 	off)
-	   git update-index --no-assume-unchanged "$@"
-	   ;;
+		git update-index --no-assume-unchanged "$@"
+		;;
 	list)
-	   git ls-files -v | grep '^h' | cut -d ' ' -f 2-
-	   ;;
+		if [ "$#" -eq 0 ]
+		then
+			args="--full-name "$(git rev-parse --show-toplevel)""
+		else
+			args="$@"
+		fi
+		git ls-files -v $args | grep '^h' | cut -d ' ' -f 2-
+		;;
 	*)
 		echo Invalid command.
 		usage
