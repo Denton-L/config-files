@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec git rebase -i --autosquash "$(git merge-base HEAD "$1")"
