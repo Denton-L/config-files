@@ -1,6 +1,6 @@
 #!/bin/sh
 
-branch="$1"
+upstream="$1"
 shift
 
-exec git rebase -i "$@" "$(git merge-base HEAD "$branch")"
+exec git rebase "$@" --onto "$upstream"... "$upstream"
