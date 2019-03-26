@@ -20,8 +20,6 @@ do
 		commits=$(git rev-list --grep '^fixup! ' --grep '^squash! ' "$range")
 		if [ -n "$commits" ]
 		then
-			printf 'Found commits with invalid commit messages:\n'
-			echo $commits
 			git show --no-patch $commits
 			exit 1
 		fi
