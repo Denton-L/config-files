@@ -27,4 +27,4 @@ perform_merge() {
 current_head="$(git rev-parse --abbrev-ref HEAD)"
 commit="$(peel_committish "$1")" || usage
 perform_merge $(git rev-parse "$commit"^@) && git diff -R "$commit"
-git reset --hard "$current_head" >/dev/null
+git checkout -f "$current_head" >/dev/null 2>&1
