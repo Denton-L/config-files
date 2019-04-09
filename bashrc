@@ -1,10 +1,6 @@
 export HISTCONTROL=ignoredups
 export HISTSIZE=1000
 export HISTFILESIZE=-1
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWSTASHSTATE=1
-export GIT_PS1_SHOWUNTRACKEDFILES=1
-export GIT_PS1_SHOWUPSTREAM=auto
 
 if [[ -z "$SSHHOME" ]]
 then
@@ -53,6 +49,6 @@ alias lla='ls -la'
 alias emacs=vim
 alias edtemp='$VISUAL $(mktemp)'
 
-PS1='[\u@\h \W$(__git_ps1 2>/dev/null)$(e=$?; [[ $e -eq 0 ]] || echo " ($e)")]\n\$ '
+PS1='[\u@\h \W$(GIT_PS1_SHOWDIRTYSTATE=1 GIT_PS1_SHOWSTASHSTATE=1 GIT_PS1_SHOWUNTRACKEDFILES=1 GIT_PS1_SHOWUPSTREAM=auto __git_ps1 2>/dev/null)$(e=$?; [[ $e -eq 0 ]] || echo " ($e)")]\n\$ '
 
 return 0
