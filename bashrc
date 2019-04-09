@@ -1,6 +1,6 @@
-export HISTCONTROL=ignoredups
-export HISTSIZE=1000
-export HISTFILESIZE=-1
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HISTFILESIZE=-1
 
 if [[ -z "$SSHHOME" ]]
 then
