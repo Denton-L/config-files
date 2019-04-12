@@ -3,6 +3,8 @@
 	name = Denton Liu
 [push]
 	default = simple
+[pull]
+	ff = only
 [alias]
 	git = !git
 	no-ff = merge --no-ff
