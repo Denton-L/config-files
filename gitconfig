@@ -26,8 +26,7 @@
 	prompt = false
 	trustExitCode = true
 [core]
-	excludesfile = ~/.globalgitignore
-	hooksPath = ~/.git-hooks/
+	hooksPath = ~/.config/git/hooks
 [help]
 	autocorrect = 10
 [rerere]

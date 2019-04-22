@@ -20,6 +20,7 @@ vim
 
 readonly configfiles='
 dunst
+git
 i3
 '
 
