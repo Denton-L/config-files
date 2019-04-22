@@ -6,7 +6,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export PATH=~/bin:~/.local/bin:/usr/lib/go-1.11/bin:$PATH
+export PATH=~/bin:~/.local/bin:/usr/local/go/bin:$PATH
 export GOPATH=~/go
 export VISUAL=vim
 export EDITOR=$VISUAL
