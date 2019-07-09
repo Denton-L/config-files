@@ -14,9 +14,6 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 
-"wrap lines
-set linebreak
-
 "set display options
 set scrolloff=1
 set sidescrolloff=5
