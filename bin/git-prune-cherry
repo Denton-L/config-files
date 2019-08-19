@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for branch in $(git branch | grep -v "^*")
+for branch in $(git branch | grep -v "^[*+]")
 do
 	git cherry HEAD $branch | grep '+' > /dev/null || git branch -D $branch
 done
