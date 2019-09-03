@@ -17,6 +17,7 @@ do
 done
 
 [[ -f "$CONFIG_ROOT"/bin/completions.bash ]] && source "$CONFIG_ROOT"/bin/completions.bash
+[[ -f "/usr/local/etc/profile.d/bash_completion.sh" ]] && source "/usr/local/etc/profile.d/bash_completion.sh"
 
 detach() {
 	bg "$1" && disown "$1"
