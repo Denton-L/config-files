@@ -1,8 +1,13 @@
-# credentials.gpg needs to be in the form:
+# credentials needs to be in the form:
+#
 # set my_gmail_realname = "First Last"
 # set my_gmail_email = "firstlast@gmail.com"
 # set my_gmail_password = "xxxxxxxx"
-source "gpg2 -dq ~/.mutt/credentials.gpg |"
+#
+# then it should be encrypted using
+#
+# $ gpg -r <email> -e <file>
+source "gpg -dq ~/.mutt/credentials.gpg |"
 
 set realname = $my_gmail_realname
 set from = $my_gmail_email
