@@ -37,3 +37,5 @@
 	cleanup = scissors
 [log]
 	date = auto:human
+[include]
+	path = ~/.config/git/localconfig
