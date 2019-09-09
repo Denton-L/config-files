@@ -7,7 +7,6 @@ Xresources.d
 bash_profile
 bashrc
 ctags
-git-hooks
 gitconfig
 globalgitignore
 inputrc
