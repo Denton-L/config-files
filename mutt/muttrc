@@ -9,6 +9,8 @@
 # $ gpg -r <email> -e <file>
 source "gpg -dq ~/.mutt/credentials.gpg |"
 
+source "~/.mutt/diff_highlighting"
+
 set realname = $my_gmail_realname
 set from = $my_gmail_email
 set use_from = yes
