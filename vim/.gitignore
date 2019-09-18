@@ -1,2 +1,4 @@
 .netrwhist
+eclim/
 spell/
+plugin/eclim.vim
