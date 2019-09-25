@@ -35,9 +35,9 @@ set ssl_starttls = yes
 
 bind index G imap-fetch-mail
 
-set sort="threads"
-set strict_threads="yes"
-set sort_browser="reverse-date"
-set sort_aux="last-date-received"
+set sort = "threads"
+set strict_threads = "yes"
+set sort_browser = "reverse-date"
+set sort_aux = "last-date-received"
 
 set hostname = "generichostname"
