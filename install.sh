@@ -8,7 +8,6 @@ bash_profile
 bashrc
 ctags
 gitconfig
-globalgitignore
 inputrc
 mutt
 profile
