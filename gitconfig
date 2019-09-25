@@ -15,6 +15,7 @@
 	summary = show -s --date=short --pretty='format:%h ("%s", %ad)'
 [diff]
 	wsErrorHighlight = all
+	algorithm = histogram
 [difftool]
 	prompt = false
 	trustExitCode = true
