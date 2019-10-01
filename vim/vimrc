@@ -18,6 +18,7 @@ set smarttab
 set scrolloff=1
 set sidescrolloff=5
 set display+=lastline
+set cursorlineopt=line
 
 "statusline defaults
 set laststatus=2
