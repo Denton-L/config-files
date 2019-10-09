@@ -41,3 +41,4 @@ set sort_browser = "reverse-date"
 set sort_aux = "last-date-received"
 
 set hostname = "generichostname"
+set send_charset = "us-ascii:utf-8"
