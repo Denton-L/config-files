@@ -16,4 +16,4 @@ dst="$2"
 
 git push --delete "$remote" "$src"
 git branch -m "$src" "$dst"
-git push -u "$remote" "$dst"
+git push -u --no-verify "$remote" "$dst"
