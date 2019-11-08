@@ -1,3 +1,8 @@
 #!/bin/sh
 
-exec git fetch "$1" "$2":"$2"
+remote="$1"
+shift
+branch="$1"
+shift
+
+exec git fetch "$@" "$remote" "$branch":"$branch"
