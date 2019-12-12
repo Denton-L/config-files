@@ -1,24 +1,32 @@
-# credentials needs to be in the form:
+# ~/.mutt/localmuttrc:
+# set realname = "First Last"
+# set from = "email@gmail.com"
+# # macOS workaround
+# set smtp_authenticators = 'gssapi:login'
 #
-# set my_gmail_realname = "First Last"
-# set my_gmail_email = "firstlast@gmail.com"
-# set my_gmail_password = "xxxxxxxx"
+# ~/.netrc:
+#
+# machine smtp.gmail.com:587
+#   login email@gmail.com
+#   password xxxxxxxxxx
 #
 # then it should be encrypted using
 #
 # $ gpg -r <email> -e <file>
-source "gpg -dq ~/.mutt/credentials.gpg |"
 
+set my_protocol = "smtp"
+set my_smtp_host = "smtp.gmail.com:587"
+
+source "~/.mutt/localmuttrc"
+source "~/.mutt/getcredential $my_protocol $my_smtp_host $from |"
 source "~/.mutt/diff_highlighting"
 
-set realname = $my_gmail_realname
-set from = $my_gmail_email
 set use_from = yes
 
-set smtp_url = "smtp://$my_gmail_email:$my_gmail_password@smtp.gmail.com:587/"
-set smtp_pass = $my_gmail_password
-set imap_user = $my_gmail_email
-set imap_pass = $my_gmail_password
+set smtp_url = "$my_protocol://$from:$my_netrc_password@$my_smtp_host/"
+set smtp_pass = $my_netrc_password
+set imap_user = $from
+set imap_pass = $my_netrc_password
 
 set folder = imaps://imap.gmail.com:993/
 set spoolfile = "+INBOX"

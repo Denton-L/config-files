@@ -38,5 +38,12 @@
 	cleanup = scissors
 [log]
 	date = auto:human
+[credential]
+	helper = netrc
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = liu.denton@gmail.com
+	smtpServerPort = 587
 [include]
 	path = ~/.config/git/localconfig
