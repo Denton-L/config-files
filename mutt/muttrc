@@ -15,7 +15,7 @@ set realname = $my_gmail_realname
 set from = $my_gmail_email
 set use_from = yes
 
-set smtp_url = "smtps://$my_gmail_email:$my_gmail_password@smtp.gmail.com:465/"
+set smtp_url = "smtp://$my_gmail_email:$my_gmail_password@smtp.gmail.com:587/"
 set smtp_pass = $my_gmail_password
 set imap_user = $my_gmail_email
 set imap_pass = $my_gmail_password
