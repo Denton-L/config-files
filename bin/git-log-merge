@@ -1,0 +1,5 @@
+#!/bin/sh
+
+merge="$1"
+shift
+git log "$merge"^1.."$merge"^@ "$@"
