@@ -45,5 +45,6 @@
 	smtpServer = smtp.gmail.com
 	smtpUser = liu.denton@gmail.com
 	smtpServerPort = 587
+	confirm = auto
 [include]
 	path = ~/.config/git/localconfig
