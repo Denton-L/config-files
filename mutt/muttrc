@@ -14,6 +14,8 @@
 #
 # $ gpg -r <email> -e <file>
 
+set realname = "Denton Liu"
+set from = "liu.denton@gmail.com"
 set my_protocol = "smtp"
 set my_smtp_host = "smtp.gmail.com:587"
 
