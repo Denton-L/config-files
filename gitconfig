@@ -46,5 +46,6 @@
 	smtpUser = liu.denton@gmail.com
 	smtpServerPort = 587
 	confirm = auto
+	suppresscc = self
 [include]
 	path = ~/.config/git/localconfig
