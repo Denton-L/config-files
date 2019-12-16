@@ -19,7 +19,7 @@ set from = "liu.denton@gmail.com"
 set my_protocol = "smtp"
 set my_smtp_host = "smtp.gmail.com:587"
 
-source "~/.mutt/localmuttrc"
+source `file=~/.mutt/localmuttrc; if test -f "$file"; then echo "$file"; else echo /dev/null; fi`
 source "~/.mutt/getcredential $my_protocol $my_smtp_host $from |"
 source "~/.mutt/diff_highlighting"
 
