@@ -16,7 +16,6 @@
 	wsErrorHighlight = all
 	algorithm = histogram
 [difftool]
-	prompt = false
 	trustExitCode = true
 [merge]
 	tool = vimdiff3
@@ -24,7 +23,6 @@
 	conflictStyle = diff3
 [mergetool]
 	prompt = false
-	trustExitCode = true
 [core]
 	hooksPath = ~/.config/git/hooks
 [help]
