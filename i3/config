@@ -117,6 +117,18 @@ bindsym $mod+Control+8 move container to workspace 8; workspace 8
 bindsym $mod+Control+9 move container to workspace 9; workspace 9
 bindsym $mod+Control+0 move container to workspace 10; workspace 10
 
+# move focused window
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+l move workspace to output right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Down move workspace to output down
+bindsym $mod+Control+Up move workspace to output up
+bindsym $mod+Control+Right move workspace to output right
+
 # scratchpad commands
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
