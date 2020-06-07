@@ -12,6 +12,7 @@
 	please = push --force-with-lease
 	amend = commit --amend --no-edit
 	reword = commit --amend
+	ref = show -s --pretty=reference
 [diff]
 	wsErrorHighlight = all
 	algorithm = histogram
