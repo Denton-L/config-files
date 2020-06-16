@@ -50,3 +50,5 @@ set sort_aux = "last-date-received"
 
 set hostname = "generichostname"
 set send_charset = "us-ascii:utf-8"
+
+set my_giturl = "imaps://public-inbox.org/INBOX.comp.version-control.git"
