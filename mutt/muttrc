@@ -1,6 +1,4 @@
 # ~/.mutt/localmuttrc:
-# set realname = "First Last"
-# set from = "email@gmail.com"
 # # macOS workaround
 # set smtp_authenticators = 'gssapi:login'
 #
