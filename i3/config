@@ -77,10 +77,6 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+Shift+a focus child
 
-# focus the child window
-#bindsym $mod+d focus child
-bindsym $mod+c focus child
-
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
