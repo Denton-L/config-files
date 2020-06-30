@@ -1,5 +1,27 @@
 #!/bin/sh
 
+systemctl_cmd=
+while test "$#" -gt 0
+do
+	case "$1" in
+		--suspend)
+			systemctl_cmd=suspend
+			;;
+		--hibernate)
+			systemctl_cmd=hiberante
+			;;
+		*)
+			exit 1
+			;;
+	esac
+	shift
+done
+
+
 i3lock -fc FF7700
 sleep 1
 xset dpms force off
+if test -n "$systemctl_cmd"
+then
+	systemctl "$systemctl_cmd"
+fi
