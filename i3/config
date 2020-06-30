@@ -230,10 +230,17 @@ bindsym Control+Print exec "$scrot-clip -e"
 bindsym XF86Display exec arandr
 
 # Program keybindings
-bindsym $sup+p exec arandr
-bindsym $sup+c exec chromium
-bindsym $sup+n exec chromium --incognito
-bindsym $sup+v exec gvim
-bindsym $sup+l exec lock-screen
-bindsym $sup+f exec pcmanfm
-bindsym $sup+t exec transmission-gtk
+mode "launch" {
+	bindsym p exec arandr; mode "default"
+	bindsym c exec chromium; mode "default"
+	bindsym n exec chromium --incognito; mode "default"
+	bindsym v exec gvim; mode "default"
+	bindsym l exec lock-screen; mode "default"
+	bindsym f exec pcmanfm; mode "default"
+	bindsym t exec transmission-gtk; mode "default"
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym Control+bracketleft mode "default"
+}
+bindsym $mod+c mode "launch"
