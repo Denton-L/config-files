@@ -235,6 +235,8 @@ mode "launch" {
 	bindsym n exec chromium --incognito; mode "default"
 	bindsym v exec gvim; mode "default"
 	bindsym l exec lock-screen; mode "default"
+	bindsym s exec lock-screen --suspend; mode "default"
+	bindsym h exec lock-screen --hibernate; mode "default"
 	bindsym f exec pcmanfm; mode "default"
 	bindsym t exec transmission-gtk; mode "default"
 
