@@ -7,6 +7,13 @@ create_null_module () {
 	pacmd update-source-proplist "$name.monitor" device.description="\"Monitor of $name\""
 }
 
+if test "$1" = "unload"
+then
+	pacmd unload-module module-loopback
+	pacmd unload-module module-null-sink
+	exit
+fi
+
 create_null_module Combined
 create_null_module Tee
 pacmd load-module module-loopback sink=Combined
