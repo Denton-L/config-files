@@ -1,0 +1,14 @@
+#!/bin/sh
+
+create_null_module () {
+	name="$1"
+	pacmd load-module module-null-sink sink_name="$name"
+	pacmd update-sink-proplist "$name" device.description="$name"
+	pacmd update-source-proplist "$name.monitor" device.description="\"Monitor of $name\""
+}
+
+create_null_module Combined
+create_null_module Tee
+pacmd load-module module-loopback sink=Combined
+pacmd load-module module-loopback sink=Combined source=Tee.monitor
+pacmd load-module module-loopback source=Tee.monitor
