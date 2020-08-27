@@ -148,13 +148,6 @@ let g:vimtex_quickfix_latexlog = {'default' : 0}
 "make vim-localvimrc make loaded files persistent
 let g:localvimrc_persistent = 1
 
-"unmap in cmdwin
-augroup cmdwin_enter
-	autocmd!
-	autocmd CmdwinEnter * nunmap <Enter>
-	autocmd CmdwinLeave * nnoremap <Enter> :
-augroup END
-
 "make go and gO start at the beginning of the line
 nnoremap go o<Esc>0C
 nnoremap gO O<Esc>0C
