@@ -225,12 +225,12 @@ bindsym --release Print exec "$scrot-clip -s"
 bindsym Shift+Print exec "$scrot-clip -u -b"
 bindsym Control+Print exec "$scrot-clip -e"
 
-# Launch arandr on Fn+Screen
+# arander Launch commands
 bindsym XF86Display exec arandr
+bindsym Mod4+p exec arandr
 
 # Program keybindings
 mode "launch" {
-	bindsym p exec arandr; mode "default"
 	bindsym c exec chromium; mode "default"
 	bindsym n exec chromium --incognito; mode "default"
 	bindsym v exec gvim; mode "default"
