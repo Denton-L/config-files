@@ -11,7 +11,12 @@ do
 	then
 		if [ "$remote_sha" = $z40 ]
 		then
-			range="$local_sha"
+			if git rev-parse "$remote" >/dev/null 2>&1
+			then
+				range="$remote..$local_sha"
+			else
+				range="$local_sha"
+			fi
 		else
 			range="$remote_sha..$local_sha"
 		fi
