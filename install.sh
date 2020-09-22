@@ -9,6 +9,7 @@ bashrc
 ctags
 gitconfig
 inputrc
+keynavrc
 mutt
 profile
 sshrc
