@@ -1,6 +1,0 @@
-#!/bin/sh
-
-upstream="$1"
-shift
-
-exec git rebase "$@" --onto "$upstream"... "$upstream"
