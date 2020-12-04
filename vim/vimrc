@@ -28,6 +28,10 @@ set wildmode=longest:full
 set wildcharm=<Tab>
 cnoremap <Tab> <Space><BS><Tab>
 
+"make <C-p> and <C-n> perform searching
+cnoremap <expr> <C-p> wildmenumode() ? "\<C-p>" : "\<Up>"
+cnoremap <expr> <C-n> wildmenumode() ? "\<C-n>" : "\<Down>"
+
 "change spellcheck to english
 set spelllang=en
 
