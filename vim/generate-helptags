@@ -1,0 +1,3 @@
+#!/bin/sh
+
+vim -es --cmd ":helptags ~/.vim/pack/plugins/start" --cmd ":q"

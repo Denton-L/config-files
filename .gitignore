@@ -1,3 +1,4 @@
 /bashrc_sources/
 /bin/git-credential-netrc
 /mutt/localmuttrc
+/vim/pack/plugins/start/tags*

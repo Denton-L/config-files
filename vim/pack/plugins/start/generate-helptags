@@ -1,6 +1,0 @@
-#!/bin/sh
-
-for f in */doc
-do
-	vim -u NONE -c "helptags $f" -c "q" > /dev/null 2>&1 &
-done
