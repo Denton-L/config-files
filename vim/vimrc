@@ -9,6 +9,7 @@ set number
 set relativenumber
 
 "tab defaults
+set shiftwidth=0
 set autoindent
 set smarttab
 
