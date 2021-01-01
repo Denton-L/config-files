@@ -19,6 +19,8 @@
 	wsErrorHighlight = all
 [help]
 	autocorrect = 10
+[init]
+	defaultBranch = master
 [log]
 	date = auto:human
 [mergetool]
