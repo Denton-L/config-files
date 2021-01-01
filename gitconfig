@@ -1,49 +1,50 @@
+[alias]
+	amend = commit --amend --no-edit
+	git = !git
+	graph = log --graph
+	no-ff = merge --no-ff
+	please = push --force-with-lease
+	ref = show -s --pretty=reference
+	reword = commit --amend
+[commit]
+	cleanup = scissors
+[core]
+	hooksPath = ~/.config/git/hooks
+[credential]
+	helper = netrc
+[difftool]
+	trustExitCode = true
+[diff]
+	algorithm = histogram
+	wsErrorHighlight = all
+[help]
+	autocorrect = 10
+[log]
+	date = auto:human
+[mergetool]
+	prompt = false
+[merge]
+	conflictStyle = diff3
+	guitool = meld
+	tool = vimdiff3
+[pull]
+	ff = only
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[rerere]
+	enabled = true
+[sendemail]
+	confirm = auto
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpServerPort = 587
+	smtpUser = liu.denton@gmail.com
+	suppresscc = self
 [user]
 	email = liu.denton@gmail.com
 	name = Denton Liu
-[push]
-	default = simple
-[pull]
-	ff = only
-[alias]
-	git = !git
-	no-ff = merge --no-ff
-	graph = log --graph
-	please = push --force-with-lease
-	amend = commit --amend --no-edit
-	reword = commit --amend
-	ref = show -s --pretty=reference
-[diff]
-	wsErrorHighlight = all
-	algorithm = histogram
-[difftool]
-	trustExitCode = true
-[merge]
-	tool = vimdiff3
-	guitool = meld
-	conflictStyle = diff3
-[mergetool]
-	prompt = false
-[core]
-	hooksPath = ~/.config/git/hooks
-[help]
-	autocorrect = 10
-[rerere]
-	enabled = true
-[rebase]
-	autosquash = true
-[commit]
-	cleanup = scissors
-[log]
-	date = auto:human
-[credential]
-	helper = netrc
-[sendemail]
-	smtpEncryption = tls
-	smtpServer = smtp.gmail.com
-	smtpUser = liu.denton@gmail.com
-	smtpServerPort = 587
-	confirm = auto
-	suppresscc = self
+
 [include]
 	path = ~/.config/git/localconfig
