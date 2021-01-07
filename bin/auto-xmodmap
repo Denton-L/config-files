@@ -1,7 +1,13 @@
 #!/bin/sh
 
-dmesg -w | grep --line-buffered 'input:' | while read line
+old=
+while true
 do
+	new="$(xinput)"
+	if test "$old" != "$new"
+	then
+		old="$new"
+		xmodmap ~/.Xmodmap
+	fi
 	sleep 1
-	xmodmap ~/.Xmodmap
 done
