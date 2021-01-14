@@ -23,6 +23,10 @@ detach() {
 	bg "$1" && disown "$1"
 }
 
+cdupgit() {
+	cd "$(git rev-parse --show-toplevel)"
+}
+
 cdup() {
 	cd "$(pwd | sed "s/\(.*\/$1\/\).*/\1/")"
 } &&
