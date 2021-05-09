@@ -44,6 +44,9 @@
 	smtpServerPort = 587
 	smtpUser = liu.denton@gmail.com
 	suppresscc = self
+[stash]
+	showIncludeUntracked = true
+	showPatch = true
 [user]
 	email = liu.denton@gmail.com
 	name = Denton Liu
