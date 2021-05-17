@@ -1,6 +1,5 @@
 [alias]
 	amend = commit --amend --no-edit
-	git = !git
 	graph = log --graph
 	no-ff = merge --no-ff
 	please = push --force-with-lease
