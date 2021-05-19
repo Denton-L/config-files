@@ -31,7 +31,7 @@
 [pull]
 	ff = only
 [push]
-	default = upstream
+	default = simple
 [rebase]
 	autosquash = true
 [rerere]
