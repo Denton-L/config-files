@@ -1,14 +1,14 @@
 #!/bin/sh
 
-systemctl_cmd=
+cmd='xset dpms force off'
 while test "$#" -gt 0
 do
 	case "$1" in
 		--suspend)
-			systemctl_cmd=suspend
+			cmd='systemctl suspend'
 			;;
 		--hibernate)
-			systemctl_cmd=hiberante
+			cmd='systemctl hiberante'
 			;;
 		*)
 			exit 1
@@ -17,11 +17,11 @@ do
 	shift
 done
 
-
-i3lock -fc FF7700
-sleep 1
-xset dpms force off
-if test -n "$systemctl_cmd"
-then
-	systemctl "$systemctl_cmd"
-fi
+xautolock -detectsleep -time 1 -locker "$cmd" &
+{
+	sleep 1
+	xautolock -locknow
+} &
+trap 'xautolock -exit' EXIT
+trap 'exit 1' INT
+i3lock -nfc FF7700
